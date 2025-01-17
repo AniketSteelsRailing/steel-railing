@@ -1,4 +1,4 @@
-import RailingProjects from "@/components/RailingProject/railingproject";
+import Homepage from "@/components/Homepage/homepage";
 export default function Home() {
-  return <RailingProjects/>;
+  return <Homepage />
 }

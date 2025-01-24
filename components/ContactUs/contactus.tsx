@@ -40,10 +40,10 @@ const ContactUs = () => {
       {/* Container for Address, Phone, Email, and Social Media */}
       <div className="container mx-auto px-6 md:px-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Address */}
-        <div className="bg-blue-100 p-6 rounded-lg shadow-lg hover:bg-blue-200 transition-colors duration-300">
+        <div className="bg-neutral p-6 rounded-lg shadow-lg hover:bg-highlight transition-colors duration-300">
           <h3 className="text-lg font-semibold text-gray-800 mb-2 relative transform transition duration-300 ease-in-out hover:scale-105">
             Address
-            <span className="block w-12 h-0.5 bg-blue-500 absolute justify-center md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
+            <span className="block w-12 h-0.5 bg-primary absolute justify-center md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
           <p className="text-gray-600">
             Gadget Fixers Services <br />
@@ -54,28 +54,28 @@ const ContactUs = () => {
         </div>
 
         {/* Phone */}
-        <div className="bg-green-100 p-6 rounded-lg shadow-lg hover:bg-green-200 transition-colors duration-300">
+        <div className="bg-neutral p-6 rounded-lg shadow-lg hover:bg-highlight transition-colors duration-300">
           <h3 className="text-lg font-semibold text-gray-800 mb-2 relative transform transition duration-300 ease-in-out hover:scale-105">
             Phone
-            <span className="block w-10 h-0.5 bg-green-500 absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
+            <span className="block w-10 h-0.5 bg-primary absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
           <p className="text-gray-600">+91 9172790843</p>
         </div>
 
         {/* Email */}
-        <div className="bg-yellow-100 p-6 rounded-lg shadow-lg hover:bg-yellow-200 transition-colors duration-300">
+        <div className="bg-neutral p-6 rounded-lg shadow-lg hover:bg-highlight transition-colors duration-300">
           <h3 className="text-lg font-semibold text-gray-800 mb-2 relative transform transition duration-300 ease-in-out hover:scale-105">
             Email
-            <span className="block w-10 h-0.5 bg-yellow-500 absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
+            <span className="block w-10 h-0.5 bg-primary absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
           <p className="text-gray-600">contact.gadgetfixers@gmail.com</p>
         </div>
 
         {/* Social Media */}
-        <div className="bg-purple-100 p-6 rounded-lg shadow-lg hover:bg-purple-200 transition-colors duration-300">
+        <div className="bg-neutral p-6 rounded-lg shadow-lg hover:bg-highlight transition-colors duration-300">
           <h3 className="text-lg font-semibold text-gray-800 mb-2 relative transform transition duration-300 ease-in-out hover:scale-105">
             Follow us
-            <span className="block w-14 h-0.5 bg-purple-500 absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
+            <span className="block w-14 h-0.5 bg-primary absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
           <div className="flex space-x-4 justify-center md:justify-start mt-2">
             <a href="https://www.facebook.com/gadgetfixers2.0/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">

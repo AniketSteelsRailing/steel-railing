@@ -47,7 +47,7 @@ export default function RailingSolutions() {
           whileTap={{ scale: 0.9 }}
           className="mt-6 bg-blue-400 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-accent transition"
         >
-          Request a Free Quote
+          Get a Free Quote
         </motion.button>
       </motion.div>
     </section>

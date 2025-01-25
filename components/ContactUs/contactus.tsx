@@ -2,6 +2,7 @@
 import React from "react";
 import Image from 'next/image';
 import { useState } from "react";
+import AuthForm from "../authentication/authform";
 
 const ContactUs = () => {
   const [message, setMessage] = useState("");
@@ -80,7 +81,7 @@ const ContactUs = () => {
           <div className="flex space-x-4 justify-center md:justify-start mt-2">
             <a href="https://www.facebook.com/gadgetfixers2.0/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
-                src="/logo/facebook.png"
+                src="/Images/facebook.png"
                 height={30}
                 width={30}
                 alt="facebook"
@@ -90,7 +91,7 @@ const ContactUs = () => {
             </a>
             <a href="https://www.instagram.com/gadgetfixer2.0/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
-                src="/logo/instagram.png"
+                src="/Images/instagram.png"
                 height={30}
                 width={30}
                 alt="instagram"
@@ -100,7 +101,7 @@ const ContactUs = () => {
             </a>
             <a href="https://www.linkedin.com/in/gadget-fixers/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
-                src="/logo/linkedin.png"
+                src="/Images/linkedin.png"
                 height={30}
                 width={30}
                 alt="linkedin"
@@ -110,7 +111,7 @@ const ContactUs = () => {
             </a>
             <a href="https://wa.me/9172790843" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
-                src="/logo/whatsapp.png"
+                src="/Images/whatsapp.png"
                 height={30}
                 width={30}
                 alt="whatsapp"
@@ -120,7 +121,7 @@ const ContactUs = () => {
             </a>
             <a href="https://www.youtube.com/@gadgetfixer-x8w" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
-                src="/logo/youtube.png"
+                src="/Images/youtube.png"
                 height={30}
                 width={30}
                 alt="youtube"
@@ -133,23 +134,27 @@ const ContactUs = () => {
       </div>
 
       {/* Google Map and Contact Form */}
-      <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:justify-center items-start gap-8 animate__animated animate__fadeIn animate__delay-6s">
+      <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:justify-center items-start gap-8 animate__animated animate__fadeIn animate__delay-6s mt-10">
         {/* Map */}
         <div className="w-full md:w-1/2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.945408653561!2d79.0766478!3d21.1943275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c10025054983%3A0x8f9344d8b694a018!2sGadget%20Fixer!5e0!3m2!1sen!2sin!4v1730658381086!5m2!1sen!2sin"
             width="100%"
-            height="450"
+            height="440"
             allowFullScreen={true}
             loading="lazy"
             className="rounded-lg shadow-xl transform transition duration-300 ease-in-out hover:scale-105"
           ></iframe>
         </div>
 
-        {/* Contact Form */}
-        {/* <div className="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-xl"> */}
-        {/* Add your contact form code here */}
-        {/* </div> */}
+        <div className="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-xl">
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">Get A Quote?</h3>
+        {isSuccessful ? (
+          <p className="text-green-500 text-center text-lg font-semibold">Welcome!</p>
+        ) : (
+          <AuthForm mode="Query" onSubmit={handleQuery} />
+        )}
+      </div>
       </div>
     </section>
   );

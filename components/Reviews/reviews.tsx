@@ -38,11 +38,11 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="px-6 md:px-12 py-12 bg-gray-200 text-center">
+    <section className="px-6 md:px-12 py-12 bg-gray-100 text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Happy Clients</h2>
       <p className="text-gray-700 mt-2 mb-8">Discover why our clients rave about the exceptional quality and craftsmanship of our custom railing and window solutions.</p>
       <div className="overflow-x-auto scrollbar-hide">
-        <div className="flex space-x-6 w-50 px-6">
+        <div className="flex space-x-6 w-50 px-6 mb-10">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}

@@ -2,6 +2,7 @@
 import React from "react";
 import Image from 'next/image';
 import { useState } from "react";
+import AuthForm from "../authentication/authform";
 
 const ContactUs = () => {
   const [message, setMessage] = useState("");
@@ -40,10 +41,10 @@ const ContactUs = () => {
       {/* Container for Address, Phone, Email, and Social Media */}
       <div className="container mx-auto px-6 md:px-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Address */}
-        <div className="bg-blue-100 p-6 rounded-lg shadow-lg hover:bg-blue-200 transition-colors duration-300">
+        <div className="bg-neutral p-6 rounded-lg shadow-lg hover:bg-highlight transition-colors duration-300">
           <h3 className="text-lg font-semibold text-gray-800 mb-2 relative transform transition duration-300 ease-in-out hover:scale-105">
             Address
-            <span className="block w-12 h-0.5 bg-blue-500 absolute justify-center md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
+            <span className="block w-12 h-0.5 bg-primary absolute justify-center md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
           <p className="text-gray-600">
             Gadget Fixers Services <br />
@@ -54,33 +55,33 @@ const ContactUs = () => {
         </div>
 
         {/* Phone */}
-        <div className="bg-green-100 p-6 rounded-lg shadow-lg hover:bg-green-200 transition-colors duration-300">
+        <div className="bg-neutral p-6 rounded-lg shadow-lg hover:bg-highlight transition-colors duration-300">
           <h3 className="text-lg font-semibold text-gray-800 mb-2 relative transform transition duration-300 ease-in-out hover:scale-105">
             Phone
-            <span className="block w-10 h-0.5 bg-green-500 absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
+            <span className="block w-10 h-0.5 bg-primary absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
           <p className="text-gray-600">+91 9172790843</p>
         </div>
 
         {/* Email */}
-        <div className="bg-yellow-100 p-6 rounded-lg shadow-lg hover:bg-yellow-200 transition-colors duration-300">
+        <div className="bg-neutral p-6 rounded-lg shadow-lg hover:bg-highlight transition-colors duration-300">
           <h3 className="text-lg font-semibold text-gray-800 mb-2 relative transform transition duration-300 ease-in-out hover:scale-105">
             Email
-            <span className="block w-10 h-0.5 bg-yellow-500 absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
+            <span className="block w-10 h-0.5 bg-primary absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
           <p className="text-gray-600">contact.gadgetfixers@gmail.com</p>
         </div>
 
         {/* Social Media */}
-        <div className="bg-purple-100 p-6 rounded-lg shadow-lg hover:bg-purple-200 transition-colors duration-300">
+        <div className="bg-neutral p-6 rounded-lg shadow-lg hover:bg-highlight transition-colors duration-300">
           <h3 className="text-lg font-semibold text-gray-800 mb-2 relative transform transition duration-300 ease-in-out hover:scale-105">
             Follow us
-            <span className="block w-14 h-0.5 bg-purple-500 absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
+            <span className="block w-14 h-0.5 bg-primary absolute left-1/2 md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
           <div className="flex space-x-4 justify-center md:justify-start mt-2">
             <a href="https://www.facebook.com/gadgetfixers2.0/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
-                src="/logo/facebook.png"
+                src="/Images/facebook.png"
                 height={30}
                 width={30}
                 alt="facebook"
@@ -90,7 +91,7 @@ const ContactUs = () => {
             </a>
             <a href="https://www.instagram.com/gadgetfixer2.0/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
-                src="/logo/instagram.png"
+                src="/Images/instagram.png"
                 height={30}
                 width={30}
                 alt="instagram"
@@ -100,7 +101,7 @@ const ContactUs = () => {
             </a>
             <a href="https://www.linkedin.com/in/gadget-fixers/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
-                src="/logo/linkedin.png"
+                src="/Images/linkedin.png"
                 height={30}
                 width={30}
                 alt="linkedin"
@@ -110,7 +111,7 @@ const ContactUs = () => {
             </a>
             <a href="https://wa.me/9172790843" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
-                src="/logo/whatsapp.png"
+                src="/Images/whatsapp.png"
                 height={30}
                 width={30}
                 alt="whatsapp"
@@ -120,7 +121,7 @@ const ContactUs = () => {
             </a>
             <a href="https://www.youtube.com/@gadgetfixer-x8w" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
-                src="/logo/youtube.png"
+                src="/Images/youtube.png"
                 height={30}
                 width={30}
                 alt="youtube"
@@ -133,23 +134,27 @@ const ContactUs = () => {
       </div>
 
       {/* Google Map and Contact Form */}
-      <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:justify-center items-start gap-8 animate__animated animate__fadeIn animate__delay-6s">
+      <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:justify-center items-start gap-8 animate__animated animate__fadeIn animate__delay-6s mt-10">
         {/* Map */}
         <div className="w-full md:w-1/2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.945408653561!2d79.0766478!3d21.1943275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c10025054983%3A0x8f9344d8b694a018!2sGadget%20Fixer!5e0!3m2!1sen!2sin!4v1730658381086!5m2!1sen!2sin"
             width="100%"
-            height="450"
+            height="440"
             allowFullScreen={true}
             loading="lazy"
             className="rounded-lg shadow-xl transform transition duration-300 ease-in-out hover:scale-105"
           ></iframe>
         </div>
 
-        {/* Contact Form */}
-        {/* <div className="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-xl"> */}
-        {/* Add your contact form code here */}
-        {/* </div> */}
+        <div className="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-xl">
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">Get A Quote?</h3>
+        {isSuccessful ? (
+          <p className="text-green-500 text-center text-lg font-semibold">Welcome!</p>
+        ) : (
+          <AuthForm mode="Query" onSubmit={handleQuery} />
+        )}
+      </div>
       </div>
     </section>
   );

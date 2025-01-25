@@ -8,27 +8,27 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   {
-    name: "Home",
+    name: "HOME",
     href: "/",
   },
   {
-    name: "Services",
+    name: "GATE DESIGNS",
     href: "/services",
   },
   {
-    name: "About Us",
+    name: "RAILING DESIGNS",
+    href: "/services",
+  },
+  {
+    name: "WINDOW DESIGNS",
+    href: "/services",
+  },
+  {
+    name: "ABOUT US",
     href: "/aboutus",
   },
   {
-    name: "Cyber Hygiene",
-    href: "/cyber-protection",
-  },
-  {
-    name: "Blogs & Events",
-    href: "/blogs",
-  },
-  {
-    name: "Contact Us",
+    name: "CONTACT US",
     href: "/contact-us",
   },
 ];
@@ -63,7 +63,7 @@ const Header = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`text-white hover:text-textColor font-semibold ${isActive(link.href) && "border-b-2 border-highlight"
+                  className={`text-white hover:text-textColor ${isActive(link.href) && "border-b-2 border-highlight"
                     }`}
                 >
                   {link.name}

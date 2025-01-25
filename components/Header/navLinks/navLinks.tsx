@@ -17,20 +17,20 @@ const NavLinks = () => {
       href: "/",
     },
     {
-      name: "Services",
+      name: "Gate Designs",
+      href: "/services",
+    },
+    {
+      name: "Railing Designs",
+      href: "/services",
+    },
+    {
+      name: "Window Designs",
       href: "/services",
     },
     {
       name: "About Us",
       href: "/aboutus",
-    },
-    {
-      name: "ScamDefender",
-      href: "/cyber-protection",
-    },
-    {
-      name: "Blog",
-      href: "/blogs",
     },
     {
       name: "Contact Us",

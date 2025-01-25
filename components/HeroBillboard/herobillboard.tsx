@@ -31,7 +31,7 @@ const HeroBillboard = () => {
       href="/service-form"
       className="inline-block px-8 py-4 bg-white text-textColor font-semibold rounded-full hover:bg-accent transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-300"
     >
-      Request A Quote
+      Get A Quote
     </Link>
   </div>
 </section>

@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-
+import { Get_Quote } from "@/commonConstant/constant";
 export default function RailingSolutions() {
   return (
     <section className="flex flex-col md:flex-row items-center px-6 md:px-12 py-12 bg-white">
@@ -47,7 +47,7 @@ export default function RailingSolutions() {
           whileTap={{ scale: 0.9 }}
           className="mt-6 bg-blue-400 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-accent transition"
         >
-          Get a Free Quote
+          {Get_Quote}
         </motion.button>
       </motion.div>
     </section>

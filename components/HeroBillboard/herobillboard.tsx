@@ -1,6 +1,7 @@
 // components/HeroWithVideo.js
 
 import Link from "next/link";
+import { Get_Quote } from "@/commonConstant/constant";
 const HeroBillboard = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -29,9 +30,9 @@ const HeroBillboard = () => {
     </p>
     <Link
       href="/service-form"
-      className="inline-block px-8 py-4 bg-white text-textColor font-semibold rounded-full hover:bg-accent transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-300"
+      className="inline-block px-8 py-2.5 bg-blue-500 text-white font-semibold rounded-full hover:bg-accent transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-300"
     >
-      Get A Quote
+      {Get_Quote}
     </Link>
   </div>
 </section>

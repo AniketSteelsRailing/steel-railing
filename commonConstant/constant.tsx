@@ -1,6 +1,6 @@
 export const SIGN_UP = "Sign Up";
 export const LOGIN = "Log In";
-export const BOOK_REPAIR_SERVICE = "Book Repair"
+export const Get_Quote = "Get Quote"
 import React from 'react';
 
 export const currentProject =[
@@ -139,43 +139,13 @@ export const cyberdata =[
   'Ulefone', 'Sharp', 'Razer', 'TCL', 'Sagem', 'Pantech', 'Panasonic', 'BenQ', 
   'Hisense', 'Cat', 'Vizio', 'Intex', 'Lava', 'Realme', 'Vivo','Others'];
 
-  export const issues = [
+  export const serviceInterestedIn = [
   'Broken Display or Screen', 
   'Battery Replacement', 
   'Battery issue or Power Issue', 
   'Not Booting/Starting', 
   'Charging Port Issue', 
   'Liquid Damage', 
-  'Speaker Issue', 
-  'Camera Issue', 
-  'Software Issue', 
-  'Overheating', 
-  'Touchscreen Not Responding', 
-  'Wi-Fi Connectivity Issue', 
-  'Bluetooth Connectivity Issue', 
-  'Network Signal Issue', 
-  'Frozen Screen', 
-  'Cracked Back Glass', 
-  'Water Damage', 
-  'Faulty Sensors', 
-  'SIM Card Reader Issue', 
-  'Fingerprint Sensor Not Working', 
-  'Headphone Jack Issue', 
-  'No Sound', 
-  'Display Flickering', 
-  'Phone Shutting Down Randomly', 
-  'Touch Not Working', 
-  'Unresponsive Buttons', 
-  'Data Loss', 
-  'Charging Issue (No Charging)', 
-  'Overheating During Use', 
-  'Software Glitch/Crash', 
-  'Microphone Issue', 
-  'GPS Not Working', 
-  'Camera Lens Broken', 
-  'Speaker Sound Distortion', 
-  'Vibration Not Working', 
-  'App Crashes',
   'Others'
 ];
 

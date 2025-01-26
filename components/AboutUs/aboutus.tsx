@@ -1,5 +1,6 @@
 import React from 'react';
 import { Shield, Users, Award, Clock } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const features = [
   {
@@ -26,8 +27,51 @@ const features = [
 
 const AboutUs = () => {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <section className="bg-gray-50">
+      <div className="relative min-h-screen">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: 'url("https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80")',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover'
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 flex items-center justify-center min-h-screen">
+        <div className="text-center px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+            We Provides Premium Railing & Window Solutions
+          </h1>
+          <p className="text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
+            Elevate your space with custom designs, exceptional durability, and unmatched safety
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button className="bg-blue-600 text-white px-8 py-3 rounded-md flex items-center space-x-2 hover:bg-blue-700 transition-all transform hover:scale-105">
+              <span>Get Quote</span>
+              {/* <ArrowRight size={20} /> */}
+            </button>
+            <button className="bg-transparent border-2 border-white text-white px-4 py-3 rounded-md hover:bg-white hover:text-gray-900 transition-all transform hover:scale-105">
+              View Our Work
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-8 h-12 border-2 border-white rounded-full flex items-start justify-center p-2">
+          <div className="w-1 h-3 bg-white rounded-full animate-scroll"></div>
+        </div>
+      </div>
+    </div>
+
+      <div className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
           <div className="mb-12 lg:mb-0">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-6">

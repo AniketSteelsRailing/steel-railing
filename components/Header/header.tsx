@@ -5,6 +5,7 @@ import logo from "../../public/logo/gf_logo_footer.png";
 import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { Get_Quote } from "@/commonConstant/constant";
 
 const navLinks = [
   {
@@ -69,18 +70,19 @@ const Header = () => {
                   {link.name}
                 </Link>
               ))}
-            </nav>
+            </nav>,
+
           </div>
 
           <div className={`${isMobileMenuOpen ? 'hidden' : 'block'} hidden lg:flex flex-grow justify-end items-center space-x-8`}>
-            <Link href="/service-form" className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
-              {/* {BOOK_REPAIR_SERVICE} */}
+            <Link href="/service-form" className="bg-blue-400 text-white px-6 py-1 rounded-full hover:bg-accent focus:outline-none focus:ring focus:ring-blue-300">
+              {Get_Quote}
             </Link>
             <a href="https://wa.me/9172790843" className="relative text-right text-top text-gray-500 hover:text-gray-700">
               <Image
-                src="/logo/whatsapp.png"
-                height={40}
-                width={40}
+                src="/Images/whatsapp.png"
+                height={30}
+                width={30}
                 alt="whatsapp"
                 objectFit="cover"
                 className="rounded-lg "
@@ -152,11 +154,11 @@ const Header = () => {
               </div>
               <div className="flex flex-col items-center py-6 space-y-6">
                 <Link href="/service-form" className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
-                  {/* {BOOK_REPAIR_SERVICE} */}
+                  {Get_Quote}
                 </Link>
                 <a href="https://wa.me/9172790843" className="relative text-right text-top text-gray-500 hover:text-gray-700">
                   <Image
-                    src="/logo/whatsapp.png"
+                    src="/Images/whatsapp.png"
                     height={40}
                     width={40}
                     alt="whatsapp"

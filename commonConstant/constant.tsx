@@ -130,22 +130,31 @@ export const cyberdata =[
 }
 ];
 
-  export const devices = ['Android', 'iPhone','Others'];
+  export const railingSevices = [
+  'Custom Design and Fabrication', 
+  'Installation of Steel Railings', 
+  'Repair and Maintenance', 
+  'Ornamental Steel Railings', 
+  'Safety Compliance', 
+  'Glass or Wood Infill Options',
+  'Others'
+];
 
-  export const brandModels = ['Asus', 'Samsung', 'Apple', 'OnePlus', 'Sony', 'Google', 'Xiaomi', 'Huawei', 
-  'Oppo', 'Realme', 'Vivo', 'Poco', 'Nokia', 'Motorola', 'LG', 'HTC', 'Lenovo', 
-  'BlackBerry', 'Microsoft', 'ZTE', 'Micromax', 'Karbonn', 'Infinix', 'Tecno', 
-  'Itel', 'Alcatel', 'Coolpad', 'Meizu', 'Doogee', 'LeEco', 'Gionee', 'Blu', 
-  'Ulefone', 'Sharp', 'Razer', 'TCL', 'Sagem', 'Pantech', 'Panasonic', 'BenQ', 
-  'Hisense', 'Cat', 'Vizio', 'Intex', 'Lava', 'Realme', 'Vivo','Others'];
+  export const windowServices = [
+  'Window Installation',
+  'Custom Steel Windows',
+  'Window Repair and Restoration',
+  'Weatherproofing and Insulation',
+  'Security Enhancements',
+  'Decorative Steel Windows',
+  'Commercial and Industrial Steel Windows',
+  'Others'
+];
 
-  export const serviceInterestedIn = [
-  'Broken Display or Screen', 
-  'Battery Replacement', 
-  'Battery issue or Power Issue', 
-  'Not Booting/Starting', 
-  'Charging Port Issue', 
-  'Liquid Damage', 
+  export const combinedServices = [
+  'Integrated Design of Railing and Window',
+  'Combined Maintenance Packages',
+  'Eco-Friendly Solutions', 
   'Others'
 ];
 

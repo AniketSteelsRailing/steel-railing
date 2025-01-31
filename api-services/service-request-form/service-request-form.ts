@@ -3,7 +3,10 @@ interface RequestPayload {
   phone: string;
   address: string;
   pincode: string;
-  serviceInterestedIn: string;
+  railing_Sevices: string;
+  window_Services: string;
+  combined_Service: string;
+  message: string;
 }
 
 export const serviceRequestForm = async (payload: RequestPayload) => {

@@ -1,17 +1,20 @@
 // components/BookServiceForm.tsx
 "use client";
 import React, { useState, useTransition } from "react";
-// import { devices, brandModels, issues } from "@/commonConstant/constant";
-import { serviceInterestedIn } from "@/commonConstant/constant";
+import { railingSevices, windowServices, combinedServices } from "@/commonConstant/constant";
 import { serviceRequestForm } from "@/api-services/service-request-form/service-request-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 interface FormData {
   name: string;
   phone: string;
   address: string;
   pincode: string;
-  serviceInterestedIn: string;
+  railingSevice: string;
+  windowService: string;
+  combinedService: string;
+  message: string;
   terms: boolean;
 }
 
@@ -21,12 +24,14 @@ const BookServiceForm: React.FC = () => {
     phone: "",
     address: "",
     pincode: "",
-    serviceInterestedIn: serviceInterestedIn[0],
+    railingSevice: railingSevices[0],
+    windowService: windowServices[0],
+    combinedService: combinedServices[0],
+    message: "",
     terms: false,
   });
 
   const [errors, setErrors] = useState<Record<string, string>>({});
-
   const [isPending, startTransition] = useTransition();
 
   const handleChange = (
@@ -35,7 +40,7 @@ const BookServiceForm: React.FC = () => {
     const { name, value, type } = e.target;
     setFormData({
       ...formData,
-      [name]: type === "checkbox" ? e.target.checked : value,
+      [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
     });
   };
 
@@ -64,8 +69,16 @@ const BookServiceForm: React.FC = () => {
       newErrors.pincode = "Please enter a valid 6-digit pincode.";
     }
 
-    if (!formData.serviceInterestedIn) {
-      newErrors.issue = "Please select a service in which you are interested.";
+    if (!formData.railingSevice) {
+      newErrors.railingSevice = "Please select a service.";
+    }
+
+    if (!formData.windowService) {
+      newErrors.windowService = "Please select a service.";
+    }
+
+    if (!formData.combinedService) {
+      newErrors.combinedService = "Please select a service.";
     }
 
     if (!formData.terms) {
@@ -99,7 +112,10 @@ const BookServiceForm: React.FC = () => {
         phone: formData.phone,
         address: formData.address,
         pincode: formData.pincode,
-        serviceInterestedIn: formData.serviceInterestedIn,
+        railing_Sevices: formData.railingSevice,
+        window_Services: formData.windowService,
+        combined_Service: formData.combinedService,
+        message: formData.message,
       };
 
       startTransition(async () => {
@@ -123,7 +139,10 @@ const BookServiceForm: React.FC = () => {
             phone: "",
             address: "",
             pincode: "",
-            serviceInterestedIn: "",
+            railingSevice: "",
+            windowService: "",
+            combinedService: "",
+            message: "",
             terms: false,
           });
         } catch (error: any) {
@@ -238,129 +257,115 @@ const BookServiceForm: React.FC = () => {
             )}
           </div>
 
-          {/* Device Dropdown */}
-          {/* <div className="relative">
+          {/* Railing Service Dropdown */}
+          <div className="relative">
             <label
-              htmlFor="device"
+              htmlFor="railingSevice"
               className="absolute top-0 left-3 text-sm text-gray-500 transform -translate-y-1/2 bg-white px-1"
             >
-              Select Device
+              Select Railing Service
             </label>
             <select
-              id="device"
-              name="device"
+              id="railingSevice"
+              name="railingSevice"
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
-              value={formData.device}
+              value={formData.railingSevice}
               onChange={handleChange}
               disabled={isPending}
             >
               <option value="" disabled>
-                Select Device
+                Select Railing Service
               </option>
-              {devices.map((device, index) => (
-                <option key={device + index} value={device}>
-                  {device}
+              {railingSevices.map((service, index) => (
+                <option key={service + index} value={service}>
+                  {service}
                 </option>
               ))}
             </select>
-            {errors.device && (
-              <p className="text-sm text-red-500">{errors.device}</p>
+            {errors.railingSevice && (
+              <p className="text-sm text-red-500">{errors.railingSevice}</p>
             )}
-          </div> */}
+          </div>
 
-          {/* Brand/Model Dropdown */}
-          {/* <div className="relative">
+          {/* Window Service Dropdown */}
+          <div className="relative">
             <label
-              htmlFor="brandModel"
+              htmlFor="windowService"
               className="absolute top-0 left-3 text-sm text-gray-500 transform -translate-y-1/2 bg-white px-1"
             >
-              Select Brand Model
+              Select Window Service
             </label>
             <select
-              id="brandModel"
-              name="brandModel"
+              id="windowService"
+              name="windowService"
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
-              value={formData.brandModel}
+              value={formData.windowService}
               onChange={handleChange}
               disabled={isPending}
             >
               <option value="" disabled>
-                Select Brand Model
+                Select Window Service
               </option>
-              {brandModels.map((brand, index) => {
-                if (formData.device === "iPhone" && brand === "Apple") {
-                  return (
-                    <option key={brand + index} value={brand}>
-                      {brand}
-                    </option>
-                  );
-                }
-                if (
-                  formData.device === "Others" ||
-                  (formData.device === "Android" && brand !== "Apple")
-                ) {
-                  return (
-                    <option key={brand + index} value={brand}>
-                      {brand}
-                    </option>
-                  );
-                }
-              })}
+              {windowServices.map((service, index) => (
+                <option key={service + index} value={service}>
+                  {service}
+                </option>
+              ))}
             </select>
-            {errors.brandModel && (
-              <p className="text-sm text-red-500">{errors.brandModel}</p>
+            {errors.windowService && (
+              <p className="text-sm text-red-500">{errors.windowService}</p>
             )}
-          </div> */}
+          </div>
 
-          {/* Device Name/Version */}
-          {/* <div className="relative">
+          {/* Combined Service Dropdown */}
+          <div className="relative">
             <label
-              htmlFor="deviceVersion"
+              htmlFor="combinedService"
               className="absolute top-0 left-3 text-sm text-gray-500 transform -translate-y-1/2 bg-white px-1"
             >
-              Device Name/Version
+              Select Combined Service
+            </label>
+            <select
+              id="combinedService"
+              name="combinedService"
+              className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
+              value={formData.combinedService}
+              onChange={handleChange}
+              disabled={isPending}
+            >
+              <option value="" disabled>
+                Select Combined Service
+              </option>
+              {combinedServices.map((service, index) => (
+                <option key={service + index} value={service}>
+                  {service}
+                </option>
+              ))}
+            </select>
+            {errors.combinedService && (
+              <p className="text-sm text-red-500">{errors.combinedService}</p>
+            )}
+          </div>
+
+          {/* Message */}
+          <div className="relative">
+            <label
+              htmlFor="message"
+              className="absolute top-0 left-3 text-sm text-gray-500 transform -translate-y-1/2 bg-white px-1"
+            >
+              Your Message
             </label>
             <input
               type="text"
-              id="deviceVersion"
-              name="deviceVersion"
+              id="message"
+              name="message"
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
-              value={formData.deviceVersion}
+              value={formData.message}
               onChange={handleChange}
               disabled={isPending}
             />
-            {errors.deviceVersion && (
-              <p className="text-sm text-red-500">{errors.deviceVersion}</p>
-            )}
-          </div> */}
-
-          {/* Issue Dropdown */}
-          <div className="relative">
-            <label
-              htmlFor="issue"
-              className="absolute top-0 left-3 text-sm text-gray-500 transform -translate-y-1/2 bg-white px-1"
-            >
-              Select Issue
-            </label>
-            <select
-              id="issue"
-              name="issue"
-              className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
-              value={formData.serviceInterestedIn}
-              onChange={handleChange}
-              disabled={isPending}
-            >
-              <option value="" disabled>
-                Select Issue
-              </option>
-              {serviceInterestedIn.map((serviceInterestedIn, index) => (
-                <option key={serviceInterestedIn + index} value={serviceInterestedIn}>
-                  {serviceInterestedIn}
-                </option>
-              ))}
-            </select>
-            {errors.issue && (
-              <p className="text-sm text-red-500">{errors.issue}</p>
+            {errors.message && (
+              <p className="text-sm text-red-500">{errors.message}</p>
             )}
           </div>
 
@@ -375,7 +380,7 @@ const BookServiceForm: React.FC = () => {
               disabled={isPending}
             />
             <span className="text-sm text-gray-600">
-              I agree to Gadget Fixers ~ Terms & Conditions
+              I agree to the Terms & Conditions
             </span>
           </label>
           {errors.terms && (

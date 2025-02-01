@@ -40,7 +40,7 @@ const projects = [
   }
 ];
 
-const Gallery = () => {
+const OurRailingProject = () => {
   const [filter, setFilter] = useState('all');
 
   const filteredProjects = filter === 'all'
@@ -123,4 +123,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default OurRailingProject;

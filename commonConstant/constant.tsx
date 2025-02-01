@@ -3,133 +3,6 @@ export const LOGIN = "Log In";
 export const Get_Quote = "Get Quote"
 import React from 'react';
 
-export const currentProject =[
-  {
-    "title": "Use Strong Passwords and Biometric Authentication",
-    "description": "Weak passwords are one of the easiest ways cybercriminals gain unauthorized access to your device and accounts.",
-    "image": "/Images/cyber_password.png",
-    "subtitle1": "Best Practices",
-    "content1": "o	Create passwords with at least 12 characters, including uppercase, lowercase, numbers, and special symbols.o	Avoid using obvious choices like birthdays, names, or common words.o	Enable biometric authentication (e.g., fingerprint or facial recognition) for an extra layer of security.",
-    "content2": "o	Use a password manager to store and manage your complex passwords securely.",
-  },
-  {
-    "title": "Enable Two-Factor Authentication (2FA)",
-    "description": "Even if someone manages to steal your password, 2FA acts as a second line of defense.",
-    "image": "/Images/cyber_2FA.png",
-    "subtitle1": "Best Practices",
-    "content1": "o	Activate 2FA on all accounts (e.g., email, social media, banking). o Use an authentication app (e.g., Google Authenticator or Authy) instead of SMS for better security.",
-    "content2": "o	Avoid sharing your 2FA codes with anyone, even if they claim to be from a trusted organization.",
- },
- {
-   "title": "Keep Your Software Updated",
-   "description": "Cybercriminals exploit vulnerabilities in outdated software to gain access to your device.",
-   "image": "/Images/cyber_softupdate.png",
-   "subtitle1": "Best Practices",
-   "content1": "o	Enable automatic updates for your operating system and all apps. o	Use an authentication app (e.g., Google Authenticator or Authy) instead of SMS for better security.",
-   "content2": "o	Check updates manually if automatic updates are not enabled.",
-},
-{
-  "title": "Install Trusted Security Apps",
-  "description": "Security apps can detect malware, phishing attempts, and other cyber threats.",
-  "image": "/Images/cyber_secureapps.png",
-  "subtitle1": "Best Practices",
-  "content1": "o	Download security apps only from official app stores (e.g., Google Play Store, Apple App Store). o	Choose apps with high ratings and positive reviews.",
-  "content2": "o	Run regular virus and malware scans on your device.",
-},
-]
-export const eventsImageUrls = [
-  '/Images/jd_1.png',
-  '/Images/jd_2.jpg',
-  '/Images/jd_3.png',
-  '/Images/jd_4.JPG',
-  '/Images/jd_5.JPG',
-  '/Images/jd_6.JPG',
-  '/Images/jd_7.JPG',
-];
-
-export const cyberdata =[
-  {
-    "title": "Use Strong Passwords and Biometric Authentication",
-    "description": "Weak passwords are one of the easiest ways cybercriminals gain unauthorized access to your device and accounts.",
-    "image": "/Images/cyber_password.png",
-    "subtitle1": "Best Practices",
-    "content1": "o	Create passwords with at least 12 characters, including uppercase, lowercase, numbers, and special symbols.o	Avoid using obvious choices like birthdays, names, or common words.o	Enable biometric authentication (e.g., fingerprint or facial recognition) for an extra layer of security.",
-    "content2": "o	Use a password manager to store and manage your complex passwords securely.",
-  },
-  {
-    "title": "Enable Two-Factor Authentication (2FA)",
-    "description": "Even if someone manages to steal your password, 2FA acts as a second line of defense.",
-    "image": "/Images/cyber_2FA.png",
-    "subtitle1": "Best Practices",
-    "content1": "o	Activate 2FA on all accounts (e.g., email, social media, banking). o Use an authentication app (e.g., Google Authenticator or Authy) instead of SMS for better security.",
-    "content2": "o	Avoid sharing your 2FA codes with anyone, even if they claim to be from a trusted organization.",
- },
- {
-   "title": "Keep Your Software Updated",
-   "description": "Cybercriminals exploit vulnerabilities in outdated software to gain access to your device.",
-   "image": "/Images/cyber_softupdate.png",
-   "subtitle1": "Best Practices",
-   "content1": "o	Enable automatic updates for your operating system and all apps. o	Use an authentication app (e.g., Google Authenticator or Authy) instead of SMS for better security.",
-   "content2": "o	Check updates manually if automatic updates are not enabled.",
-},
-{
-  "title": "Install Trusted Security Apps",
-  "description": "Security apps can detect malware, phishing attempts, and other cyber threats.",
-  "image": "/Images/cyber_secureapps.png",
-  "subtitle1": "Best Practices",
-  "content1": "o	Download security apps only from official app stores (e.g., Google Play Store, Apple App Store). o	Choose apps with high ratings and positive reviews.",
-  "content2": "o	Run regular virus and malware scans on your device.",
-},
-{
-  "title": "Avoid Public Wi-Fi Without a VPN",
-  "description": "Public Wi-Fi networks are often unsecured, making it easy for hackers to intercept your data.",
-  "image": "/Images/cyber_vpn.png",
-  "subtitle1": "Best Practices",
-  "content1": "o	Use a VPN (Virtual Private Network) to encrypt your internet traffic. o	Avoid accessing sensitive accounts (e.g., banking apps) on public Wi-Fi.",
-  "content2": "o	If a VPN isn’t available, use your mobile data network for sensitive activities.",
-},
-{
-  "title": "Be Cautious with Links and Attachments",
-  "description": "Phishing attacks often use fake links and attachments to install malware or steal information.",
-  "image": "/Images/cyber_mailscam.png",
-  "subtitle1": "Best Practices",
-  "content1": "o	Don’t click on links or download files from unknown sources. o	Verify the sender’s identity before interacting with emails, messages, or attachments.",
-  "content2": "o	Look for HTTPS in website URLs to ensure they are secure.",
-},
-{
-  "title": "Disable Bluetooth and Location Services When Not in Use",
-  "description": "Unsecured Bluetooth connections and location services can be exploited by hackers.",
-  "image": "/Images/cyber_blutoothscam.png",
-  "subtitle1": "Best Practices",
-  "content1": "o	Turn off Bluetooth and location services when not actively using them. o	Avoid pairing your device with unknown or public Bluetooth connections.",
-  "content2": "o	Use device settings to restrict location access to only essential apps.",
-},
-{
-  "title": "Verify App Permissions",
-  "description": "Many apps request unnecessary permissions that could compromise your privacy.",
-  "image": "/Images/cyber_apppermission.png",
-  "subtitle1": "Best Practices",
-  "content1": "o	Regularly review app permissions in your phone settings. o	Only grant permissions that are necessary for the app's core functions.",
-  "content2": "o	Be wary of apps asking for access to your contacts, camera, or messages unnecessarily.",
-},
-{
-  "title": "Monitor Financial Transactions Regularly",
-  "description": "Unauthorized transactions on banking apps or digital wallets can indicate fraud.",
-  "image": "/Images/cyber_bankingscam.png",
-  "subtitle1": "Best Practices",
-  "content1": "o	Enable real-time transaction alerts from your bank. o	Regularly review your account statements and look for unusual activity.",
-  "content2": "o	Immediately report any suspicious activity to your bank.",
-},
-{
-  "title": "Educate Yourself About Common Scams",
-  "description": "Knowledge is your best defense against cyber scams.",
-  "image": "/Images/cyber_educatescams.png",
-  "subtitle1": "Best Practices",
-  "content1": "o	Stay informed about common scams like phishing, smishing (SMS phishing), and fake tech support calls. o	Follow cybersecurity news and updates from reliable sources.",
-  "content2": "o	Share what you’ve learned with friends and family to help them stay safe too.",
-}
-];
-
   export const railingSevices = [
   'Custom Design and Fabrication', 
   'Installation of Steel Railings', 
@@ -158,251 +31,385 @@ export const cyberdata =[
   'Others'
 ];
 
-export const services = [
+ export const gates = [
   {
-    title: 'Mobile Screen Replacement',
-    description: 'Transform your device with a stunning screen replacement! Enjoy vibrant colors and flawless touch sensitivity, bringing your phone back to life and enhancing your daily experience.',
-    icon: <i className="fas fa-mobile-alt"></i>,
+    "id": 1,
+    "title": "Main Front Gate",
+    "image": "/images/gateImages/gate1.jpg",
+    "description": "Elegant and modern main front gate design.",
+    "brand": 'S3',
+    "sku": 'GATE1',
+    "productType": 'Gate',
+    "originalPrice": 'Rs 850',
+    "discountedPrice": 'Rs 750',
+    "discountPercentage": '12% OFF',
+    "materialGrade": 'Grade 304',
+    "features": [
+      'Material - Stainless Steel 304 grade',
+      'Thickness: 1.2 mm',
+      'Used in Staircase And Balcony',
+      'Price Per Running Feet',
+    ],
   },
-  {
-    title: 'Mobile Battery Replacement',
-    description: 'Revitalize your phone’s performance with a new battery! Say goodbye to sudden shutdowns and hello to extended usage, ensuring your device keeps up with your busy lifestyle.',
-    icon: <i className="fas fa-battery-full"></i>,
-  },
-  {
-    title: 'Mobile Back Glass Replacement',
-    description: 'Restore your phone elegance with a back glass replacement. Repair unsightly cracks and scratches, giving your device a sleek, polished look that feels as good as new.',
-    icon: <i className="fas fa-glass-whiskey"></i>,
-  },
-  {
-    title: 'Mobile Charging Jack Replacement',
-    description: 'Don’t let charging issues slow you down! Our charging jack replacement service ensures a reliable connection, so you can power up your phone effortlessly and stay connected all day.',
-    icon: <i className="fas fa-plug"></i>,
-  },
-  {
-    title: 'Mobile Mic Replacement',
-    description: 'Elevate your call quality with a new microphone! Experience crystal-clear audio and communicate confidently without the frustration of muffled sound or static.',
-    icon: <i className="fas fa-microphone"></i>,
-  },
-  {
-    title: 'Mobile Ear Speaker Replacement',
-    description: 'Enjoy rich, clear audio during calls with our ear speaker replacement service. Hear every word without distortion and enhance your listening experience for music and videos.',
-    icon: <i className="fas fa-headphones-alt"></i>,
-  },
-  {
-    title: 'Mobile Camera Replacement',
-    description: 'Capture life moments beautifully with a camera replacement! Upgrade to a high-quality lens and take stunning photos and videos that you will cherish forever.',
-    icon: <i className="fas fa-camera"></i>,
-  },
-  {
-    title: 'Mobile Volume Button Replacement',
-    description: 'Regain control of your sound settings with a volume button replacement. Enjoy easy access to volume adjustments and enhance your overall user experience.',
-    icon: <i className="fas fa-volume-up"></i>,
-  },
-  {
-    title: 'Mobile Power Button Replacement',
-    description: 'Restore full functionality to your device with a power button replacement. Effortlessly manage your phone’s power and enjoy seamless operation every time.',
-    icon: <i className="fas fa-power-off"></i>,
-  },
-  {
-    title: 'Mobile Front Glass Damage Repair',
-    description: 'Don’t let cracks disrupt your view! Our front glass damage repair service ensures a pristine display, so you can enjoy your favorite content without any distractions.',
-    icon: <i className="fas fa-window-close"></i>,
-  },
-  {
-    title: 'Mobile Body Replacement',
-    description: 'Refresh your phone’s appearance with a body replacement! Protect internal components and give your device a stylish new look that turns heads.',
-    icon: <i className="fas fa-phone"></i>,
-  },
+    {
+      "id": 2,
+      "title": "Stainless Steel Gate",
+      "image": "/images/gateImages/gate2.jpg",
+      "description": "Durable and sleek stainless steel gate.",
+      "brand": "S4",
+      "sku": "GATE2",
+      "productType": "Gate",
+      "originalPrice": "Rs 1000",
+      "discountedPrice": "Rs 900",
+      "discountPercentage": "10% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel 304 grade",
+        "Thickness: 1.0 mm",
+        "Used in Commercial Buildings",
+        "Price Per Running Feet"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Iron Main Front Gate",
+      "image": "/images/gateImages/gate3.jpg",
+      "description": "Classic and strong iron main front gate.",
+      "brand": "S5",
+      "sku": "GATE3",
+      "productType": "Gate",
+      "originalPrice": "Rs 1200",
+      "discountedPrice": "Rs 1100",
+      "discountPercentage": "8% OFF",
+      "materialGrade": "Grade 202",
+      "features": [
+        "Material - Iron",
+        "Thickness: 1.5 mm",
+        "Heavy Duty Design",
+        "Price Per Running Feet"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "4 Folding Gate Design",
+      "image": "/images/gateImages/gate4.jpg",
+      "description": "Space-saving 4 folding gate design.",
+      "brand": "S6",
+      "sku": "GATE4",
+      "productType": "Folding Gate",
+      "originalPrice": "Rs 1500",
+      "discountedPrice": "Rs 1300",
+      "discountPercentage": "13% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel 304 grade",
+        "Folding Mechanism",
+        "Space Saving",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Simple Iron Gate",
+      "image": "/images/gateImages/gate5.jpg",
+      "description": "Minimalistic and simple iron gate.",
+      "brand": "S7",
+      "sku": "GATE5",
+      "productType": "Gate",
+      "originalPrice": "Rs 750",
+      "discountedPrice": "Rs 650",
+      "discountPercentage": "13% OFF",
+      "materialGrade": "Grade 202",
+      "features": [
+        "Material - Iron",
+        "Basic Design",
+        "Easy Installation",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Curtain Man Gate",
+      "image": "/images/gateImages/gate6.jpg",
+      "description": "Intricately designed curtain man gate.",
+      "brand": "S8",
+      "sku": "GATE6",
+      "productType": "Gate",
+      "originalPrice": "Rs 1800",
+      "discountedPrice": "Rs 1600",
+      "discountPercentage": "11% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel",
+        "Stylish Design",
+        "High Durability",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Modern Steel Gate",
+      "image": "/images/gateImages/gate7.jpg",
+      "description": "Sleek modern design for residential properties.",
+      "brand": "S9",
+      "sku": "GATE7",
+      "productType": "Gate",
+      "originalPrice": "Rs 1400",
+      "discountedPrice": "Rs 1300",
+      "discountPercentage": "7% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel",
+        "Contemporary Design",
+        "Durable Finish",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Luxury Gate Design",
+      "image": "/images/gateImages/gate8.jpg",
+      "description": "High-end luxury gate with intricate designs.",
+      "brand": "S10",
+      "sku": "GATE8",
+      "productType": "Luxury Gate",
+      "originalPrice": "Rs 5000",
+      "discountedPrice": "Rs 4500",
+      "discountPercentage": "10% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel",
+        "Luxurious Finish",
+        "Heavy Duty",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Steel Gate with Glass Panels",
+      "image": "/images/gateImages/gate9.jpg",
+      "description": "Steel gate with glass panel inserts for added aesthetics.",
+      "brand": "S11",
+      "sku": "GATE9",
+      "productType": "Gate",
+      "originalPrice": "Rs 2500",
+      "discountedPrice": "Rs 2200",
+      "discountPercentage": "12% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel with Glass Panels",
+        "Modern Aesthetic",
+        "Durable and Secure",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Industrial Iron Gate",
+      "image": "/images/gateImages/gate10.jpg",
+      "description": "Robust iron gate with industrial design.",
+      "brand": "S12",
+      "sku": "GATE10",
+      "productType": "Gate",
+      "originalPrice": "Rs 2000",
+      "discountedPrice": "Rs 1800",
+      "discountPercentage": "10% OFF",
+      "materialGrade": "Grade 202",
+      "features": [
+        "Material - Iron",
+        "Industrial Design",
+        "High Security",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Compact Folding Gate",
+      "image": "/images/gateImages/gate11.jpg",
+      "description": "Compact and versatile folding gate for narrow spaces.",
+      "brand": "S13",
+      "sku": "GATE11",
+      "productType": "Folding Gate",
+      "originalPrice": "Rs 1600",
+      "discountedPrice": "Rs 1500",
+      "discountPercentage": "6% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel",
+        "Compact Design",
+        "Perfect for Small Spaces",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Traditional Wooden Gate",
+      "image": "/images/gateImages/gate12.jpg",
+      "description": "Traditional wooden gate with a classic design.",
+      "brand": "S14",
+      "sku": "GATE12",
+      "productType": "Wooden Gate",
+      "originalPrice": "Rs 2200",
+      "discountedPrice": "Rs 2000",
+      "discountPercentage": "9% OFF",
+      "materialGrade": "Wood",
+      "features": [
+        "Material - Wood",
+        "Classic Design",
+        "Ideal for Residential Areas",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "High Security Steel Gate",
+      "image": "/images/gateImages/gate13.jpg",
+      "description": "High security steel gate with reinforced bars.",
+      "brand": "S15",
+      "sku": "GATE13",
+      "productType": "Gate",
+      "originalPrice": "Rs 3000",
+      "discountedPrice": "Rs 2700",
+      "discountPercentage": "10% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel",
+        "Reinforced Design",
+        "Maximum Security",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Aluminum Gate",
+      "image": "/images/gateImages/gate14.jpg",
+      "description": "Lightweight and durable aluminum gate.",
+      "brand": "S16",
+      "sku": "GATE14",
+      "productType": "Gate",
+      "originalPrice": "Rs 1800",
+      "discountedPrice": "Rs 1700",
+      "discountPercentage": "6% OFF",
+      "materialGrade": "Aluminum",
+      "features": [
+        "Material - Aluminum",
+        "Lightweight",
+        "Corrosion Resistant",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Rustic Iron Gate",
+      "image": "/images/gateImages/gate15.jpg",
+      "description": "Rustic design iron gate for vintage style homes.",
+      "brand": "S17",
+      "sku": "GATE15",
+      "productType": "Gate",
+      "originalPrice": "Rs 1500",
+      "discountedPrice": "Rs 1400",
+      "discountPercentage": "7% OFF",
+      "materialGrade": "Grade 202",
+      "features": [
+        "Material - Iron",
+        "Rustic Design",
+        "Vintage Style",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Security Barrier Gate",
+      "image": "/images/gateImages/gate16.jpg",
+      "description": "Security barrier gate for high-traffic areas.",
+      "brand": "S18",
+      "sku": "GATE16",
+      "productType": "Barrier Gate",
+      "originalPrice": "Rs 4000",
+      "discountedPrice": "Rs 3800",
+      "discountPercentage": "5% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel",
+        "Barrier Design",
+        "Heavy Duty",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Automatic Sliding Gate",
+      "image": "/images/gateImages/gate17.jpg",
+      "description": "Automatic sliding gate with remote control.",
+      "brand": "S19",
+      "sku": "GATE17",
+      "productType": "Sliding Gate",
+      "originalPrice": "Rs 5000",
+      "discountedPrice": "Rs 4500",
+      "discountPercentage": "10% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel",
+        "Automatic Mechanism",
+        "Remote Control Operation",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Gate with LED Lights",
+      "image": "/images/gateImages/gate18.jpg",
+      "description": "Modern gate with integrated LED lighting.",
+      "brand": "S20",
+      "sku": "GATE18",
+      "productType": "Gate",
+      "originalPrice": "Rs 3500",
+      "discountedPrice": "Rs 3200",
+      "discountPercentage": "9% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel",
+        "LED Lighting",
+        "Energy Efficient",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Modern Steel Gate",
+      "image": "/images/gateImages/gate19.jpg",
+      "description": "Sleek, modern steel gate design for modern homes.",
+      "brand": "S21",
+      "sku": "GATE19",
+      "productType": "Gate",
+      "originalPrice": "Rs 2800",
+      "discountedPrice": "Rs 2500",
+      "discountPercentage": "11% OFF",
+      "materialGrade": "Grade 304",
+      "features": [
+        "Material - Stainless Steel",
+        "Sleek Design",
+        "Contemporary Style",
+        "Price Per Unit"
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Wooden with Metal Inserts Gate",
+      "image": "/images/gateImages/gate20.jpg",
+      "description": "Wooden gate with metal inserts for a stylish touch.",
+      "brand": "S22",
+      "sku": "GATE20",
+      "productType": "Wooden Gate",
+      "originalPrice": "Rs 3500",
+      "discountedPrice": "Rs 3200",
+      "discountPercentage": "9% OFF",
+      "materialGrade": "Wood with Metal",
+      "features": [
+        "Material - Wood with Metal Inserts",
+        "Elegant Design",
+        "Stylish Look",
+        "Price Per Unit"
+      ]
+    },
 ];
-
-export const blogData= [{
-  image: '/Images/samzfold.jpg',
-  heading: 'Samsung Galaxy Z Fold 6',
-  content: '•	Price: Expected around ₹1,49,999, given its premium foldable status. •	Who It’s For: Professionals and multitaskers who want a versatile device.',
-},
-{
-  image: '/Images/samzflip.jpg',
-  heading: 'Samsung Galaxy Z Flip 6',
-  content: '•	Price: Expected around ₹84,999, offering a fashionable, compact foldable. •	Who It’s For: Style-conscious users needing a compact and trendy phone.',
-},
-{
-  image: '/Images/iphone16.jpg',
-  heading: 'iPhone 16 Pro Max',
-  content: '•	Price: Expected starting at ₹1,39,999, typical for Apple’s premium models. •	Who It’s For: Apple fans and mobile photographers looking for a top-tier device.',
-},
-{
-  image: '/Images/pixel9.jpg',
-  heading: 'Google Pixel 9 Pro',
-  content: '•	Price: Expected around ₹89,999, Google’s flagship AI-enhanced smartphone. •	Who It’s For: Photography lovers and AI enthusiasts.',
-},
-{
-  image: '/Images/oneplus.jpg',
-  heading: 'OnePlus Open 2',
-  content: '•	Price: Estimated around ₹1,29,999, a foldable option with a competitive price. •	Who It’s For: Foldable tech fans wanting functionality and performance.',
-}
-] 
-export const brands = [
-  {
-    name: "Apple",
-    logo: "/brandsLogo/apple.png",
-    alt: "Apple",
-    url: "#apple",
-  },
-  {
-    name: "Xiaomi",
-    logo: "/brandsLogo/mi.png",
-    alt: "Xiaomi",
-    url: "#xiaomi",
-  },
-  {
-    name: "Samsung",
-    logo: "/brandsLogo/samsung.png",
-    alt: "Samsung",
-    url: "#samsung",
-  },
-  {
-    name: "OnePlus",
-    logo: "/brandsLogo/oneplus.png",
-    alt: "OnePlus",
-    url: "#oneplus",
-  },
-  {
-    name: "Oppo",
-    logo: "/brandsLogo/oppo.png",
-    alt: "Oppo",
-    url: "#oppo",
-  },
-  {
-    name: "Realme",
-    logo: "/brandsLogo/realme.png",
-    alt: "Realme",
-    url: "#realme",
-  },
-  {
-    name: "Motorola",
-    logo: "/brandsLogo/motorola.png",
-    alt: "Motorola",
-    url: "#motorola",
-  },
-  { name: "Nokia", logo: "/brandsLogo/nokia.png", alt: "Nokia", url: "#nokia", },
-  { name: "Honor", logo: "/brandsLogo/honor.png", alt: "Honor", url: "#honor", },
-  { name: "ASUS", logo: "/brandsLogo/asus.png", alt: "ASUS", url: "#asus", },
-  {
-    name: "Google",
-    logo: "/brandsLogo/google.png",
-    alt: "Google",
-    url: "#google",
-  },
-  { name: "Poco", logo: "/brandsLogo/poco.png", alt: "Poco", url: "#poco" },
-  {
-    name: "Infinix",
-    logo: "/brandsLogo/infinix.png",
-    alt: "Infinix",
-    url: "#nfinix"
-  },
-  { name: "iQOO", logo: "/brandsLogo/iqoo.png", alt: "iQOO", url: "#iq00" },
-  {
-    name: "Nothing",
-    logo: "/brandsLogo/nothing.png",
-    alt: "Nothing",
-    url: "#nothing"
-  },
-];
-
-export const reviews = [
-  {
-    name: "Aahana",
-    message:
-      "Excellent work by Gadget Fixer! Quick response, skilled technicians, and my Oppo F9 Pro is as good as new.",
-    image: "/Images/girl1.png", // Replace with actual image path
-  },
-  {
-    name: "Vivaan",
-    message:
-      "Impressive job by Gadget Fixer! Fast turnaround, knowledgeable staff, and my iPhone 12 is working perfectly again",
-    image: "/Images/boy1.png", // Replace with actual image path
-  },
-  {
-    name: "Ishani",
-    message:
-      "Exceptional service from Gadget Fixer! They were efficient, skilled, and my tablet is back in action without a hitch",
-    image: "/Images/girl2.png", // Replace with actual image path
-  },
-  {
-    name: "Tarun",
-    message:
-      "Fantastic experience with Gadget Fixer! They were prompt, professional, and my Poco M2 is back to top performance.",
-    image: "/Images/boy2.png", // Replace with actual image path
-  },
-];
-
-export const faqData = [
-  {
-    question:
-      "How does Gadget Fixer guarantee the quality of its mobile repair services?",
-    answer:
-      "We prioritize quality by using only premium components in our repairs. Our skilled technicians pay meticulous attention to detail, ensuring no compromises are made. Your satisfaction and the performance of your device are our top priorities.",
-  },
-  {
-    question: "Can I trust Gadget Fixer for mobile repair service?",
-    answer:
-      "At Gadget Fixer, we understand that trust is crucial when it comes to mobile repairs. Our certified technicians are dedicated to providing reliable service, using only high-quality parts and equipment. We pride ourselves on transparency and professionalism, ensuring that you are informed throughout the repair process. With our commitment to customer satisfaction and a track record of successful repairs, you can trust Gadget Fixer to get the job done right at your location.",
-  },
-  {
-    question: "Which brands do you offer repair services for?",
-    answer:
-      "At Gadget Fixer, we provide repair services for a diverse range of mobile brands. Our expertise extends to popular brands such as Apple, Samsung, OnePlus, Google Pixel, and more. Whether you need repairs for an iPhone, an Android device, or any other smartphone, our skilled technicians are equipped to handle it all. Trust us to restore your device to optimal performance, regardless of the brand!",
-  },
-  {
-    question: "How can I schedule a mobile repair service with Gadget Fixer?",
-    answer:
-      "Visit Our Website: Go to the gadgetfixer.in website to access our service booking section. \nChoose Your Service: Select the type of repair you need and the brand of your device from our list of available services. \nFill Out the Form: Complete the online form with your contact information, device details, and a brief description of the issue. \nSelect a Time: Choose a convenient date and time for the repair service that fits your schedule. \nConfirmation: After submitting your request, you will receive a confirmation via email or text or call with the details of your appointment. \nDevice Pick-up and Drop-off: Our Device Pick-up and Drop-off service provides a convenient way to get your mobile repairs done without leaving your home. We’ll pick up your device at a scheduled time, complete the necessary repairs, and return it to you. \nGet Ready for Your Repair: Our technician will arrive at your location on the scheduled date to assess and repair your device.",
-  },
-];
-
-export const features = [
-  {
-    title: "Superior Repair Services",
-    description: "High-quality certified parts",
-    icon: "📱", // Replace with an actual icon if needed
-  },
-  {
-    title: "Quick Mobile Repair",
-    description: "Mobile Repair Available On-Site at Gadget Fixer Store or Your Home!",
-    icon: "🛠️",
-  },
-  {
-    title: "Comprehensive Estimate Overview",
-    description:
-      "Deliver accurate estimates that meet your needs and expectations",
-    icon: "📝",
-  },
-  {
-    title: "6 Months Warranty",
-    description: "Enjoy a convenient 6-month warranty on replaced parts",
-    icon: "🗓️",
-  },
-  {
-    title: "Expert Technicians",
-    description: "Skilled & Qualified Professionals",
-    icon: "👨‍🔧",
-  },
-  {
-    title: "Safety Assurance Guaranteed",
-    description: "Total Device & Data Security",
-    icon: "🔒",
-  },
-];
-
-export const howitworks = [
-  { icon: "✅", title: "Service Booked", description: "Book your service online." },
-  { icon: "📞", title: "Customer Care Call", description: "Schedule a visit with customer care." },
-  { icon: "👨‍🔧", title: "Technician Visits", description: "Our technician visits your location." },
-  { icon: "🚚", title: "Doorstep Repair", description: "Repair at your doorstep or free pickup." },
-  { icon: "📱", title: "Mobile Diagnosed", description: "Device diagnosed at an authorized center." },
-  { icon: "📝", title: "Quote Sent", description: "Receive an approximate repair quote." },
-  { icon: "🔨", title: "Repair Done", description: "Repair completed after approval." },
-  { icon: "🚛", title: "Device Delivery", description: "Hassle-free device delivery." },
-];
-

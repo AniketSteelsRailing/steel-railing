@@ -14,15 +14,15 @@ const navLinks = [
   },
   {
     name: "GATE DESIGNS",
-    href: "/services",
+    href: "/imagemodel/gate",
   },
   {
     name: "RAILING DESIGNS",
-    href: "/services",
+    href: "/imagemodel/railing",
   },
   {
     name: "WINDOW DESIGNS",
-    href: "/services",
+    href: "/imagemodel/window",
   },
   {
     name: "ABOUT US",
@@ -153,7 +153,7 @@ const Header = () => {
                 ))}
               </div>
               <div className="flex flex-col items-center py-6 space-y-6">
-                <Link href="/service-form" className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
+                <Link href="/service-form" className="bg-blue-500 text-white px-5 py-6 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
                   {Get_Quote}
                 </Link>
                 <a href="https://wa.me/9172790843" className="relative text-right text-top text-gray-500 hover:text-gray-700">

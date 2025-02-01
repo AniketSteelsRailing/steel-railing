@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { Shield, Users, Award, Clock } from 'lucide-react';
+import Link from "next/link";
+import { Shield, Users, Award, Clock, } from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 
 const features = [
@@ -52,13 +52,19 @@ const AboutUsHero = () => {
               Elevate your space with custom designs, exceptional durability, and unmatched safety
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button className="bg-blue-600 text-white px-8 py-3 rounded-md flex items-center space-x-2 hover:bg-blue-700 transition-all transform hover:scale-105">
+                <Link href="/service-form" className="bg-blue-600 text-white px-8 py-3 rounded-md flex items-center space-x-2 hover:bg-blue-700 transition-all transform hover:scale-105">
                 <span>Get Quote</span>
-                {/* <ArrowRight size={20} /> */}
+                </Link>
+                <Link href="/railingproject" className="bg-transparent border-2 border-white text-white px-4 py-3 rounded-md hover:bg-white hover:text-gray-900 transition-all transform hover:scale-105">
+                <span>View Our Work</span>
+                </Link>
+              {/* <button className="bg-blue-600 text-white px-8 py-3 rounded-md flex items-center space-x-2 hover:bg-blue-700 transition-all transform hover:scale-105">
+                <span>Get Quote</span>
+                {/* <ArrowRight size={20} />
               </button>
               <button className="bg-transparent border-2 border-white text-white px-4 py-3 rounded-md hover:bg-white hover:text-gray-900 transition-all transform hover:scale-105">
                 View Our Work
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

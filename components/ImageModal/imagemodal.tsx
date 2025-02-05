@@ -15,7 +15,7 @@ interface Gate {
   discountedPrice: string;
   discountPercentage: string;
   materialGrade: string;
-  features: string[];
+  features: string;
 }
 
 interface SteelImageGalleryProps {
@@ -139,7 +139,7 @@ const SteelImageGallery: React.FC<SteelImageGalleryProps> = ({ gates }) => {
               </button>
 
               <div className="w-full md:w-3/4">
-                <img className="w-full h-64 md:h-full object-cover" src={selectedGate.image} alt="Gate" />
+                <img className="w-full md:h-full object-cover" src={selectedGate.image} alt="Gate" />
               </div>
 
               <div className="w-full md:w-2/3 md:p-6">
@@ -173,14 +173,11 @@ const SteelImageGallery: React.FC<SteelImageGalleryProps> = ({ gates }) => {
                 </p>
 
                 <div className="mt-4">
-                  {selectedGate.features.map((feature, index) => (
-                    <span
-                      key={index}
-                      className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mb-2 mr-2"
+                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mb-2 mr-2"
                     >
-                      {feature}
+                      {selectedGate.features}
                     </span>
-                  ))}
+                  
                 </div>
               </div>
             </div>

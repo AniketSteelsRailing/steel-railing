@@ -1,7 +1,7 @@
-import SteelGateGallery from "@/components/ImageModal/gateImageModel";
+import OurRailingProject from "@/components/ImageModal/railImageModel";
 
 const page = () => {
-  return <SteelGateGallery/>;
+  return <OurRailingProject/>;
 };
 
 export default page;

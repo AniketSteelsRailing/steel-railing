@@ -10,7 +10,7 @@ import SteelImageGallery from './imagemodal'; // Assuming this is the component 
 import { railings } from '@/commonConstant/constant'; // Ensure that this path is correct
 
 
-const OurRailingProject = () => {
+const RailingProject = () => {
   const [filter, setFilter] = useState('all');
 
   const filteredProjects = filter === 'all'
@@ -69,4 +69,4 @@ const OurRailingProject = () => {
   );
 };
 
-export default OurRailingProject;
+export default RailingProject;

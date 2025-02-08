@@ -35,7 +35,7 @@ const AboutUs = () => {
               Crafting Excellence in Every Detail
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              At SteelCraft, we combine traditional craftsmanship with modern innovation to create
+              At Modern Steel Railing Services, we combine traditional craftsmanship with modern innovation to create
               stunning railing and window solutions that stand the test of time. Our commitment
               to quality and customer satisfaction has made us a trusted name in the industry.
             </p>

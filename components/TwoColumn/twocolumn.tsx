@@ -45,7 +45,7 @@ export default function RailingSolutions() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="mt-6 bg-blue-400 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-accent transition"
+          className="mt-6 rounded-full bg-blue-400 text-white py-2 px-6 shadow-lg hover:bg-accent transition"
         >
           {Get_Quote}
         </motion.button>

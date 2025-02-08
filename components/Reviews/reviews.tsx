@@ -6,41 +6,41 @@ import { motion } from 'framer-motion';
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Laura Davis',
-      image: '/laura.png',
+      name: 'Rakesh Sharma',
+      image: '/Images/boy1.png',
       rating: '⭐⭐⭐⭐⭐',
-      feedback: 'Steel Railing And Windows Making transformed our home with stunning railings that not only look beautiful but also enhance our safety. The team was professional and attentive to our needs.',
+      feedback: 'Modern steel railing team transformed our home with stunning railings that not only look beautiful but also enhance our safety. The team was professional and attentive to our needs.',
     },
     {
-      name: 'Tom Harris',
-      image: '/tom.png',
+      name: 'Arjun Sing',
+      image: '/Images/boy2.png',
       rating: '⭐⭐⭐⭐⭐',
       feedback: 'The window installation service was seamless from start to finish. The new windows have made a huge difference in energy efficiency and appearance. Highly recommend!',
     },
     {
-      name: 'Emily Johnson',
-      image: '/emily.png',
+      name: 'Krishna Reddy',
+      image: '/Images/boy3.png',
       rating: '⭐⭐⭐⭐⭐',
-      feedback: 'Our experience with Steel Railing And Windows Making was fantastic. They delivered on time and exceeded our expectations with their attention to detail. Our new railings are a perfect blend of functionality and style.',
+      feedback: 'Our experience with modern steel railing team was fantastic. They delivered on time and exceeded our expectations with their attention to detail. Our new railings are a perfect blend of functionality and style.',
     },
     {
-      name: 'Tom Harris',
-      image: '/tom.png',
+      name: 'Aahana Kapoor',
+      image: '/Images/girl1.png',
       rating: '⭐⭐⭐⭐⭐',
-      feedback: 'The window installation service was seamless from start to finish. The new windows have made a huge difference in energy efficiency and appearance. Highly recommend!',
+      feedback: 'Working with modern steel railing team was a fantastic experience. They delivered ahead of schedule and their attention to detail was remarkable. The railings are not only stylish but also incredibly sturdy, adding the perfect finishing touch to our home',
     },
     {
-      name: 'Emily Johnson',
-      image: '/emily.png',
+      name: 'Ishani Yadav',
+      image: '/Images/girl2.png',
       rating: '⭐⭐⭐⭐⭐',
-      feedback: 'Our experience with Steel Railing And Windows Making was fantastic. They delivered on time and exceeded our expectations with their attention to detail. Our new railings are a perfect blend of functionality and style.',
+      feedback: 'modern steel railing team truly impressed us with their service. From the initial consultation to the final installation, everything was seamless. The new windows and railings have transformed our home, combining both beauty and durability.',
     }
   ];
 
   return (
     <section className="px-6 md:px-12 py-12 bg-gray-100 text-center">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Happy Clients</h2>
-      <p className="text-gray-700 mt-2 mb-8">Discover why our clients rave about the exceptional quality and craftsmanship of our custom railing and window solutions.</p>
+      <p className="text-gray-700 mt-4 mb-8">Discover why our clients rave about the exceptional quality and craftsmanship of our custom railing and window solutions.</p>
       <div className="overflow-x-auto scrollbar-hide">
         <div className="flex space-x-6 w-50 px-6 mb-10">
           {testimonials.map((testimonial, index) => (

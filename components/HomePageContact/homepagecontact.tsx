@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import AuthForm from '../authentication/authform';
+import BookServiceForm from '../Form/form'
 
 const HomePageContact = () => {
   const [message, setMessage] = useState("");
@@ -32,23 +33,23 @@ const HomePageContact = () => {
             Get in Touch
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Have a project in mind? We'd love to hear from you.
+          Reach out to us for high-quality steel railing and window solutions? Whether you’re looking for custom designs, installations, or repairs, our expert team at Steel & Window Solutions ensures precision and durability in every project. Let us enhance the security, beauty, and functionality of your space with our premium services
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-          <h3 className="text-xl font-semibold text-gray-800 mb-4">Get A Quote?</h3>
+          <div >
         {isSuccessful ? (
           <p className="text-green-500 text-center text-lg font-semibold">Welcome!</p>
         ) : (
-          <AuthForm mode="Query" onSubmit={handleQuery} />
+          <BookServiceForm/>
+          // <AuthForm mode="Query" onSubmit={handleQuery} />
         )}
             
           </div>
 
           <div className="space-y-8">
-            <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="bg-white shadow-2xl rounded-lg p-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-6">
                 Contact Information
               </h3>
@@ -92,12 +93,15 @@ const HomePageContact = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-8">
+            <div className="bg-white rounded-lg shadow-2xl p-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Emergency Service
               </h3>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-2">
                 Available 24/7 for urgent repairs and maintenance.
+              </p>
+              <p className="text-gray-600 mb-2">
+              We provide fast, reliable emergency services for steel railings, windows, and gates. Whether it's urgent repairs, replacements, or installations, our expert team is available.
               </p>
               <button className="w-full bg-red-400 text-white px-6 py-3 rounded-md hover:bg-red-700 transition-colors flex items-center justify-center">
                 <Phone className="w-5 h-5 mr-2" />

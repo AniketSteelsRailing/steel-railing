@@ -16,9 +16,13 @@ const Footer = () => {
             </Link>
           </li>
           <li>
+            <p className="text-lg text-center mb-4">
+              Modern Steel Railing Services
+            </p>
+          </li>
+          <li>
             <p className="text-sm text-center">
-              Gadget Fixers ensures your devices are restored to peak performance. <br />
-              Trust us to bring your devices back to life.
+            Discover premium railing, window and Gate solutions for your home and business! Our custom designs, exceptional durability, and unmatched safety make all the difference.
             </p>
           </li>
         </ul>
@@ -26,21 +30,21 @@ const Footer = () => {
 
       {/* Company Links Section */}
       <div className="w-full sm:w-1/2 lg:w-1/5 p-4">
-        <h4 className="text-lg font-bold mb-4 text-center sm:text-left">COMPANY</h4>
-        <ul className="list-none mb-0 sm:text-left text-center">
+        <h4 className="text-lg font-bold mb-4 text-center sm:text-left ml-8">COMPANY</h4>
+        <ul className="list-none mb-0 sm:text-left text-center ml-8">
           <li className="mb-2">
             <Link href="/" className="text-sm hover:text-textColor">
               Home
             </Link>
           </li>
           <li className="mb-2">
-            <a href="#" className="text-sm hover:text-textColor">
+            <a href="/aboutus" className="text-sm hover:text-textColor">
               About Us
             </a>
           </li>
           <li className="mb-2">
-            <Link href="/services" className="text-sm hover:text-textColor">
-              Services
+            <Link href="/railingproject" className="text-sm hover:text-textColor">
+              Our Latest Projects
             </Link>
           </li>
           <li className="mb-2">
@@ -48,43 +52,43 @@ const Footer = () => {
               Contact Us
             </Link>
           </li>
-          <li className="mb-2">
+          {/* <li className="mb-2">
             <Link href="/blogs" className="text-sm hover:text-textColor">
               Blog
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
 
       {/* Support Links Section */}
       <div className="w-full sm:w-1/2 lg:w-1/5 p-4">
-        <h4 className="text-lg font-bold mb-4 text-center sm:text-left">SUPPORT</h4>
+        <h4 className="text-lg font-bold mb-4 text-center sm:text-left">SERVICES</h4>
         <ul className="list-none mb-0 sm:text-left text-center">
           <li className="mb-2">
-            <a href="/warranty" className="text-sm hover:text-textColor">
-              Gadget Fixers Warranty
+            <a href="/imagemodel/railing" className="text-sm hover:text-textColor">
+              Railing Designs
             </a>
           </li>
           <li className="mb-2">
-            <a href="/shipping" className="text-sm hover:text-textColor">
-              Shipping Policy
+            <a href="/imagemodel/window" className="text-sm hover:text-textColor">
+              Window Designs
             </a>
           </li>
           <li className="mb-2">
-            <a href="/privacy" className="text-sm hover:text-textColor">
-              Privacy Policy
+            <a href="/imagemodel/gate" className="text-sm hover:text-textColor">
+              Gate Designs
             </a>
           </li>
           <li className="mb-2">
-            <a href="/termsandcondition" className="text-sm hover:text-textColor">
-              Terms & Conditions
+            <a href="/ourservices" className="text-sm hover:text-textColor">
+              Service Details
             </a>
           </li>
-          <li className="mb-2">
+          {/* <li className="mb-2">
             <Link href="/faqs" className="text-sm hover:text-textColor">
               FAQs
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
 
@@ -171,10 +175,9 @@ const Footer = () => {
     </div>
   </div>
   <div className="text-center mt-4 mb-4">
-    <p className="text-sm">&copy; 2024 Gadget Fixers. All rights reserved.</p>
+    <p className="text-sm">&copy; 2024 Modern Steel Railing. All rights reserved.</p>
   </div>
 </footer>
-
   );
 };
 

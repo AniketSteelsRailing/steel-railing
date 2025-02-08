@@ -1,7 +1,7 @@
-import OurRailingProject from "@/components/ImageModal/railImageModel";
+import RailingProject from "@/components/ImageModal/railImageModel";
 
 const page = () => {
-  return <OurRailingProject/>;
+  return <RailingProject/>;
 };
 
 export default page;

@@ -57,28 +57,28 @@ const Header = () => {
           </div>
 
           {/* Navigation Links - Collapse on small screens */}
-          <div className="hidden lg:flex flex-grow justify-end items-center">
+          <div className="hidden lg:flex flex-grow justify-end items-center h-full">
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`text-white hover:text-textColor ${isActive(link.href) && "border-b-2 border-highlight"
+                  className={`text-white hover:bg-neutral font-semibold hover:text-textColor ${isActive(link.href) && "border-b-2 border-highlight"
                     }`}
                 >
                   {link.name}
                 </Link>
               ))}
-            </nav>,
+            </nav>
 
           </div>
 
           <div className={`${isMobileMenuOpen ? 'hidden' : 'block'} hidden lg:flex flex-grow justify-end items-center space-x-8`}>
-            <Link href="/service-form" className="bg-blue-400 text-white px-6 py-1 rounded-full hover:bg-accent focus:outline-none focus:ring focus:ring-blue-300">
+            <Link href="/service-form" className="bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-accent focus:outline-none focus:ring focus:ring-blue-300">
               {Get_Quote}
             </Link>
-            <a href="https://wa.me/9172790843" className="relative text-right text-top text-gray-500 hover:text-gray-700">
+            {/* <a href="https://wa.me/9172790843" className="relative text-right text-top text-gray-500 hover:text-gray-700">
               <Image
                 src="/Images/whatsapp.png"
                 height={30}
@@ -87,7 +87,7 @@ const Header = () => {
                 objectFit="cover"
                 className="rounded-lg "
               />
-            </a>
+            </a> */}
           </div>
         </div>
 

@@ -1,7 +1,7 @@
-import SteelGateGallery from "@/components/ImageModal/gateImageModel";
+import GateProject from "@/components/ImageModal/gateImageModel";
 
 const page = () => {
-  return <SteelGateGallery/>;
+  return <GateProject/>;
 };
 
 export default page;

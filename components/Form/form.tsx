@@ -1,7 +1,7 @@
 // components/BookServiceForm.tsx
 "use client";
 import React, { useState, useTransition } from "react";
-import { railingSevices, windowServices, combinedServices } from "@/commonConstant/constant";
+import { railingSevices, windowServices, gateServices } from "@/commonConstant/constant";
 import { serviceRequestForm } from "@/api-services/service-request-form/service-request-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -13,7 +13,7 @@ interface FormData {
   pincode: string;
   railingSevice: string;
   windowService: string;
-  combinedService: string;
+  gateService: string;
   message: string;
   terms: boolean;
 }
@@ -26,7 +26,7 @@ const BookServiceForm: React.FC = () => {
     pincode: "",
     railingSevice: railingSevices[0],
     windowService: windowServices[0],
-    combinedService: combinedServices[0],
+    gateService: gateServices[0],
     message: "",
     terms: false,
   });
@@ -77,7 +77,7 @@ const BookServiceForm: React.FC = () => {
       newErrors.windowService = "Please select a service.";
     }
 
-    if (!formData.combinedService) {
+    if (!formData.gateService) {
       newErrors.combinedService = "Please select a service.";
     }
 
@@ -114,7 +114,7 @@ const BookServiceForm: React.FC = () => {
         pincode: formData.pincode,
         railing_Sevices: formData.railingSevice,
         window_Services: formData.windowService,
-        combined_Service: formData.combinedService,
+        gate_Services: formData.gateService,
         message: formData.message,
       };
 
@@ -141,7 +141,7 @@ const BookServiceForm: React.FC = () => {
             pincode: "",
             railingSevice: "",
             windowService: "",
-            combinedService: "",
+            gateService: "",
             message: "",
             terms: false,
           });
@@ -164,9 +164,9 @@ const BookServiceForm: React.FC = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="p-6 bg-white shadow-2xl rounded-lg mt-10 mb-10">
+      <div className="p-6 bg-white shadow-2xl rounded-lg mb-10">
         <h2 className="text-2xl font-semibold text-center mb-6 text-gray-700">
-          Book Your Service
+          Get a Quote
         </h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Full Name */}
@@ -326,24 +326,24 @@ const BookServiceForm: React.FC = () => {
               Select Combined Service
             </label>
             <select
-              id="combinedService"
-              name="combinedService"
+              id="gateService"
+              name="gateService"
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
-              value={formData.combinedService}
+              value={formData.gateService}
               onChange={handleChange}
               disabled={isPending}
             >
               <option value="" disabled>
                 Select Combined Service
               </option>
-              {combinedServices.map((service, index) => (
+              {gateServices.map((service, index) => (
                 <option key={service + index} value={service}>
                   {service}
                 </option>
               ))}
             </select>
-            {errors.combinedService && (
-              <p className="text-sm text-red-500">{errors.combinedService}</p>
+            {errors.gateService && (
+              <p className="text-sm text-red-500">{errors.gateService}</p>
             )}
           </div>
 
@@ -389,7 +389,7 @@ const BookServiceForm: React.FC = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-300"
+            className="w-full bg-blue-400 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-300"
           >
             {isPending ? (
               <div className="flex items-center justify-center">

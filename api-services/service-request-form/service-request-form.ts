@@ -5,7 +5,7 @@ interface RequestPayload {
   pincode: string;
   railing_Sevices: string;
   window_Services: string;
-  combined_Service: string;
+  gate_Services: string;
   message: string;
 }
 

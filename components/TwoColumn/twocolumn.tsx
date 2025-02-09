@@ -30,13 +30,13 @@ export default function RailingSolutions() {
         transition={{ duration: 1, delay: 0.5 }}
         className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-bold text-textColor">
           Premium Railing & Window Solutions
         </h2>
-        <p className="mt-4 text-gray-700">
+        <p className="mt-4 text-textColor">
           Elevate your property with our custom designs that ensure exceptional durability and safety. Experience tailor-made installations that enhance both aesthetics and functionality.
         </p>
-        <ul className="mt-4 text-gray-700 space-y-2">
+        <ul className="mt-4 text-textColor space-y-2">
           <li>✔️ Custom railings designed to match your unique style</li>
           <li>✔️ Expert installations prioritizing safety and efficiency</li>
           <li>✔️ Reliable repair services to maintain your investments</li>
@@ -45,7 +45,7 @@ export default function RailingSolutions() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="mt-6 bg-blue-400 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-accent transition"
+          className="mt-6 rounded-full bg-blue-400 text-white py-2 px-6 shadow-lg hover:bg-accent transition"
         >
           {Get_Quote}
         </motion.button>

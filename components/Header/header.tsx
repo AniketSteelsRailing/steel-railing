@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Get_Quote } from "@/commonConstant/constant";
+import clsx from "clsx"; // Import clsx for conditional class names
 
 const navLinks = [
   {
@@ -37,13 +38,13 @@ const Header = () => {
   const pathname = usePathname();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => setMobileMenuOpen(!isMobileMenuOpen);
-  const isActive = (href: string) => pathname === href;
+  const isActive = (href: string) => pathname === href; // Function to check if the link is active
   return (
     // fixed header tag values of classname "bg-gray-900 shadow-md"
     <header className="w-full top-0 left-0 z-30 bg-primary">
       <div className="flex justify-left">
         {/* Logo Section */}
-        <div className="container flex justify-between items-center px-6 py-4">
+        <div className="container flex justify-between items-center px-6 py-1">
           <div className="text-2xl font-bold flex items-center">
             <Link href="/">
               {/* <Image
@@ -57,25 +58,29 @@ const Header = () => {
           </div>
 
           {/* Navigation Links - Collapse on small screens */}
-          <div className="hidden lg:flex flex-grow justify-end items-center">
+          <div className="hidden lg:flex flex-grow justify-end items-center h-full">
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-6">
+            <nav className="hidden md:flex">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`text-white hover:text-textColor ${isActive(link.href) && "border-b-2 border-highlight"
-                    }`}
+                  className={clsx(
+                    "px-4 py-5 text-white hover:bg-neutral font-semibold hover:text-textColor",
+                    {
+                      "bg-neutral text-black": isActive(link.href), // Apply active styles
+                    }
+                  )}
                 >
                   {link.name}
                 </Link>
               ))}
-            </nav>,
+            </nav>
 
           </div>
 
           <div className={`${isMobileMenuOpen ? 'hidden' : 'block'} hidden lg:flex flex-grow justify-end items-center space-x-8`}>
-            <Link href="/service-form" className="bg-blue-400 text-white px-6 py-1 rounded-full hover:bg-accent focus:outline-none focus:ring focus:ring-blue-300">
+            <Link href="/service-form" className="bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-accent focus:outline-none focus:ring focus:ring-blue-300">
               {Get_Quote}
             </Link>
             <a href="https://wa.me/9172790843" className="relative text-right text-top text-gray-500 hover:text-gray-700">
@@ -96,9 +101,9 @@ const Header = () => {
         {/* Mobile Navigation Toggle (Hamburger Menu) */}
         <div className=" flex lg:hidden items-center mr-5">
           <button className="text-white" onClick={() => { toggleMobileMenu() }}>
+            <span className="block w-8 h-1 bg-white mb-2 mt-4"></span>
             <span className="block w-8 h-1 bg-white mb-2"></span>
-            <span className="block w-8 h-1 bg-white mb-2"></span>
-            <span className="block w-8 h-1 bg-white"></span>
+            <span className="block w-8 h-1 bg-white mb-4"></span>
           </button>
         </div>
       </div>
@@ -112,8 +117,12 @@ const Header = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-white hover:text-accent font-semibold ${isActive(link.href) && "border-b-2 border-textColor"
-                  }`}
+                className={clsx(
+                  "px-4 py-5 text-white hover:bg-neutral font-semibold hover:text-textColor",
+                  {
+                    "bg-neutral text-black": isActive(link.href), // Apply active styles
+                  }
+                )}
               >
                 {link.name}
               </Link>
@@ -128,7 +137,7 @@ const Header = () => {
           >
             {/* Navigation Links Dialog */}
             <div
-              className={`fixed top-0 left-0 w-2/3 bg-gray-800 text-white h-full transition-transform transform ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+              className={`fixed top-0 left-0 w-2/3 bg-primary text-white h-full transition-transform transform ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
             >
               <div className="flex justify-end p-4">
@@ -139,13 +148,17 @@ const Header = () => {
                   &times; {/* Close Icon */}
                 </button>
               </div>
-              <div className="flex flex-col items-center py-6 space-y-6">
+              <div className="flex flex-col items-center py-2 space-y-4">
                 {navLinks.map((link) => (
                   <Link
-                    key={link.name}
+                    key={link.name} 
                     href={link.href}
-                    className={`text-white hover:text-textColor font-semibold text-lg ${isActive(link.href) && "border-b-2 border-orange-400"
-                      }`}
+                    className={clsx(
+                      "px-4 py-2 text-white hover:bg-neutral font-semibold hover:text-textColor",
+                      {
+                        "bg-neutral text-black": isActive(link.href), // Apply active styles
+                      }
+                    )}
                     onClick={() => setMobileMenuOpen(false)} // Close menu on link click
                   >
                     {link.name}
@@ -153,7 +166,7 @@ const Header = () => {
                 ))}
               </div>
               <div className="flex flex-col items-center py-6 space-y-6">
-                <Link href="/service-form" className="bg-blue-500 text-white px-5 py-6 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
+                <Link href="/service-form" className="bg-blue-500 text-white px-5 py-3 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
                   {Get_Quote}
                 </Link>
                 <a href="https://wa.me/9172790843" className="relative text-right text-top text-gray-500 hover:text-gray-700">
@@ -177,14 +190,3 @@ const Header = () => {
 };
 
 export default Header;
-{/* <div className="flex space-x-4">
-          <Link href="/login" className="bg-blue-500 text-white px-5 py-2 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
-            {LOGIN}
-          </Link>
-          <Link
-            href="/signup"
-            className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300"
-          >
-            {SIGN_UP}
-          </Link>
-        </div> */}

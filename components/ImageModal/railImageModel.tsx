@@ -1,16 +1,10 @@
-// Define the Gate interface to type-check the props being passed
-
-// The Home component that will pass the gates array to SteelImageGallery
-// export default function SteelGateGallery() {
-//   return <SteelImageGallery gates={gates} />; // Ensure gates is being passed as a prop
-// }
 'use client'
 import React, { useState } from 'react';
-import SteelImageGallery from './imagemodal'; // Assuming this is the component that receives the 'gates' prop
+import SteelImageGallery from './imagemodal'; 
 import { railings } from '@/commonConstant/constant'; // Ensure that this path is correct
 
 
-const OurRailingProject = () => {
+const RailingProject = () => {
   const [filter, setFilter] = useState('all');
 
   const filteredProjects = filter === 'all'
@@ -20,12 +14,12 @@ const OurRailingProject = () => {
   return (
     <section className="py-14 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-            Our Latest Projects
+        <div className="items-center justify-center mb-12">
+          <h2 className="text-2xl font-bold text-textColor sm:text-3xl text-center">
+          Custom Railing Designs: Strength and Style for Every Property
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Explore our portfolio of custom railings and window installations
+          <p className="mt-6 text-lg text-textColor text-center">
+          Enhance the beauty and safety of your home with our expertly crafted railings. Designed to fit your unique style, <br/>our railings offer both durability and aesthetic appeal for any property.
           </p>
         </div>
 
@@ -36,7 +30,7 @@ const OurRailingProject = () => {
               className={`px-6 py-2 text-sm font-medium rounded-l-md ${
                 filter === 'all'
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-50'
+                  : 'bg-white text-textColor hover:bg-gray-200'
               } border border-gray-200`}
             >
               All Railing Projects
@@ -46,7 +40,7 @@ const OurRailingProject = () => {
               className={`px-6 py-2 text-sm font-medium ${
                 filter === 'glassrailing'
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-50'
+                  : 'bg-white text-textColor hover:bg-gray-200'
               } border-t border-b border-gray-200`}
             >
               Glass Railing
@@ -56,7 +50,7 @@ const OurRailingProject = () => {
               className={`px-6 py-2 text-sm font-medium rounded-r-md ${
                 filter === 'steelrailing'
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-50'
+                  : 'bg-white text-textColor hover:bg-gray-200'
               } border border-gray-200`}
             >
               Stainless Steel Railing
@@ -69,4 +63,4 @@ const OurRailingProject = () => {
   );
 };
 
-export default OurRailingProject;
+export default RailingProject;

@@ -6,37 +6,55 @@ const projects = [
     id: 1,
     title: 'Modern Staircase Railing',
     category: 'railings',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: '\/images\/railingImages\/glassRailing\/glass_rail1.png'
   },
   {
     id: 2,
     title: 'Energy-Efficient Windows',
     category: 'windows',
-    image: 'https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: '\/images\/windowImages\/aluminiumWin\/alumwin10.png'
   },
   {
     id: 3,
     title: 'Glass Balcony Railing',
     category: 'railings',
-    image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: '\/images\/railingImages\/glassRailing\/glass_rail7.png'
   },
   {
     id: 4,
     title: 'Commercial Windows',
     category: 'windows',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: '\/images\/windowImages\/aluminiumWin\/alumwin7.png'
   },
   {
     id: 5,
-    title: 'Custom Steel Railing',
-    category: 'railings',
-    image: 'https://images.unsplash.com/photo-1600573472591-ee6c8e00e1fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    title: 'Commercial Gates',
+    category: 'gates',
+    image: '\/images\/gateImages\/slidinggate\/slide_gate5.png'
   },
   {
     id: 6,
+    title: 'Custom Steel Railing',
+    category: 'railings',
+    image: '\/images\/railingImages\/steelRailing\/steel_rai4.png'
+  },
+  {
+    id: 7,
+    title: 'Custom Sliding Gates',
+    category: 'gates',
+    image: '\/images\/gateImages\/slidinggate\/slide_gate1.png'
+  },
+  {
+    id: 8,
     title: 'Residential Windows',
     category: 'windows',
-    image: 'https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: '\/images\/windowImages\/steelGrillWin\/grill_win2.png'
+  },
+  {
+    id: 9,
+    title: 'Residential Gates',
+    category: 'gates',
+    image: '\/images\/gateImages\/doubledoorgate\/door_gate9.png'
   }
 ];
 
@@ -50,12 +68,15 @@ const OurRailingProject = () => {
   return (
     <section className="py-14 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-textColor sm:text-4xl">
             Our Latest Projects
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Explore our portfolio of custom railings and window installations
+          <p className="mt-6 text-lg text-gray-600">
+            Explore our portfolio of custom railings, windows and gates installations
+          </p>
+          <p className="mt-5 text-gray-600">
+          Transform your space with our premium steel railing, windows, and gate solutions, designed for both durability and elegance. Crafted with precision, our steel railings offer safety without compromising on style, adding a modern touch to balconies, staircases, and more. Our custom steel windows provide sleek, contemporary aesthetics with exceptional strength and energy efficiency. For an added layer of security and curb appeal, our robust steel gates are built to last and create an impressive first impression. Whether you're enhancing your home's exterior or designing an industrial masterpiece, our steelwork is the ideal choice for functionality and sophistication.
           </p>
         </div>
 
@@ -66,8 +87,8 @@ const OurRailingProject = () => {
               className={`px-6 py-2 text-sm font-medium rounded-l-md ${
                 filter === 'all'
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-50'
-              } border border-gray-200`}
+                  : 'bg-white text-gray-700 hover:bg-gray-200'
+              } border border-gray-300`}
             >
               All Projects
             </button>
@@ -76,20 +97,30 @@ const OurRailingProject = () => {
               className={`px-6 py-2 text-sm font-medium ${
                 filter === 'railings'
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-50'
-              } border-t border-b border-gray-200`}
+                  : 'bg-white text-gray-700 hover:bg-gray-200'
+              } border-t border-b border-gray-300`}
             >
               Railings
             </button>
             <button
               onClick={() => setFilter('windows')}
-              className={`px-6 py-2 text-sm font-medium rounded-r-md ${
+              className={`px-6 py-2 text-sm font-medium ${
                 filter === 'windows'
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-50'
-              } border border-gray-200`}
+                  : 'bg-white text-textColor hover:bg-gray-200'
+              } border border-gray-300`}
             >
               Windows
+            </button>
+            <button
+              onClick={() => setFilter('gates')}
+              className={`px-6 py-2 text-sm font-medium rounded-r-md ${
+                filter === 'gates'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-white text-gray-700 hover:bg-gray-200'
+              } border border-gray-300`}
+            >
+              Gates
             </button>
           </div>
         </div>

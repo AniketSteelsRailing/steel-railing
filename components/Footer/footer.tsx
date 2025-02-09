@@ -1,6 +1,7 @@
 import logo from "../../public/logo/gf_logo_footer.png";
 import Image from "next/image";
 import Link from "next/link";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Footer = () => {
   return (
@@ -16,9 +17,13 @@ const Footer = () => {
             </Link>
           </li>
           <li>
+            <p className="text-lg text-center mb-4">
+              Modern Steel Railing Services
+            </p>
+          </li>
+          <li>
             <p className="text-sm text-center">
-              Gadget Fixers ensures your devices are restored to peak performance. <br />
-              Trust us to bring your devices back to life.
+            Discover premium railing, window and Gate solutions for your home and business! Our custom designs, exceptional durability, and unmatched safety make all the difference.
             </p>
           </li>
         </ul>
@@ -26,21 +31,21 @@ const Footer = () => {
 
       {/* Company Links Section */}
       <div className="w-full sm:w-1/2 lg:w-1/5 p-4">
-        <h4 className="text-lg font-bold mb-4 text-center sm:text-left">COMPANY</h4>
-        <ul className="list-none mb-0 sm:text-left text-center">
+        <h4 className="text-lg font-bold mb-4 text-center sm:text-left ml-8">COMPANY</h4>
+        <ul className="list-none mb-0 sm:text-left text-center ml-8">
           <li className="mb-2">
             <Link href="/" className="text-sm hover:text-textColor">
               Home
             </Link>
           </li>
           <li className="mb-2">
-            <a href="#" className="text-sm hover:text-textColor">
+            <a href="/aboutus" className="text-sm hover:text-textColor">
               About Us
             </a>
           </li>
           <li className="mb-2">
-            <Link href="/services" className="text-sm hover:text-textColor">
-              Services
+            <Link href="/railingproject" className="text-sm hover:text-textColor">
+              Our Latest Projects
             </Link>
           </li>
           <li className="mb-2">
@@ -48,43 +53,43 @@ const Footer = () => {
               Contact Us
             </Link>
           </li>
-          <li className="mb-2">
+          {/* <li className="mb-2">
             <Link href="/blogs" className="text-sm hover:text-textColor">
               Blog
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
 
       {/* Support Links Section */}
       <div className="w-full sm:w-1/2 lg:w-1/5 p-4">
-        <h4 className="text-lg font-bold mb-4 text-center sm:text-left">SUPPORT</h4>
+        <h4 className="text-lg font-bold mb-4 text-center sm:text-left">SERVICES</h4>
         <ul className="list-none mb-0 sm:text-left text-center">
           <li className="mb-2">
-            <a href="/warranty" className="text-sm hover:text-textColor">
-              Gadget Fixers Warranty
+            <a href="/imagemodel/railing" className="text-sm hover:text-textColor">
+              Railing Designs
             </a>
           </li>
           <li className="mb-2">
-            <a href="/shipping" className="text-sm hover:text-textColor">
-              Shipping Policy
+            <a href="/imagemodel/window" className="text-sm hover:text-textColor">
+              Window Designs
             </a>
           </li>
           <li className="mb-2">
-            <a href="/privacy" className="text-sm hover:text-textColor">
-              Privacy Policy
+            <a href="/imagemodel/gate" className="text-sm hover:text-textColor">
+              Gate Designs
             </a>
           </li>
           <li className="mb-2">
-            <a href="/termsandcondition" className="text-sm hover:text-textColor">
-              Terms & Conditions
+            <a href="/ourservices" className="text-sm hover:text-textColor">
+              Service Details
             </a>
           </li>
-          <li className="mb-2">
+          {/* <li className="mb-2">
             <Link href="/faqs" className="text-sm hover:text-textColor">
               FAQs
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
 
@@ -135,11 +140,11 @@ const Footer = () => {
         <h4 className="text-lg font-bold mb-4 text-center sm:text-left">CONNECT WITH US</h4>
         <ul className="list-none mb-0 sm:text-left text-center">
           <li className="mb-2">
-            <p className="text-sm hover:text-textColor">Gadget Fixers Location</p>
+            <p className="text-sm hover:text-textColor">Modern Steel Railing Services</p>
           </li>
           <li className="mb-2">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.945408653561!2d79.0766478!3d21.1943275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c10025054983%3A0x8f9344d8b694a018!2sGadget%20Fixer!5e0!3m2!1sen!2sin!4v1730658381086!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1915.3837087450468!2d79.15199985147932!3d21.124008080734185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4b90295682f89%3A0x53098a4bf8ff74a9!2sModern%20Steel%20Railing%20Services!5e0!3m2!1sen!2sin!4v1739107085779!5m2!1sen!2sin"
               width="190"
               height="80"
               allowFullScreen={true}
@@ -149,16 +154,16 @@ const Footer = () => {
           </li>
           <li className="mb-2">
             <p className="text-sm hover:text-textColor">
-              Near Nagoba Sai Mandir,
+              Jay Jalaram Nagar,Kharbi Road,
               <br />
-              Faras, Baba Farid Nagar,
+               Near Mata Mandir Bus Stop, Wathoda Lay Out
               <br />
-              Nagpur, Maharashtra 440030
+              Nagpur, Maharashtra 440034
             </p>
           </li>
           <li className="mb-2">
             <a href="https://wa.me/9172790843" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
-              <i className="fas fa-phone mr-2"></i>+91 9172790843
+              <i className="fas fa-phone mr-2"></i>+91 7972321411
             </a>
           </li>
           <li className="mb-2">
@@ -171,10 +176,9 @@ const Footer = () => {
     </div>
   </div>
   <div className="text-center mt-4 mb-4">
-    <p className="text-sm">&copy; 2024 Gadget Fixers. All rights reserved.</p>
+    <p className="text-sm">&copy; 2024 Modern Steel Railing. All rights reserved.</p>
   </div>
 </footer>
-
   );
 };
 

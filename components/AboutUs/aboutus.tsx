@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield, Users, Award, Clock } from 'lucide-react';
-import { ArrowRight } from 'lucide-react';
+import 'animate.css';
 
 const features = [
   {
@@ -30,12 +30,13 @@ const AboutUs = () => {
     <section className="bg-gray-50">
       <div className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-          <div className="mb-12 lg:mb-0">
-            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-6">
+          {/* Text Section */}
+          <div className="mb-12 lg:mb-0 animate__animated animate__fadeIn animate__delay-1s">
+            <h2 className="text-3xl font-bold text-textColor sm:text-4xl mb-6">
               Crafting Excellence in Every Detail
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              At SteelCraft, we combine traditional craftsmanship with modern innovation to create
+              At Modern Steel Railing Services, we combine traditional craftsmanship with modern innovation to create
               stunning railing and window solutions that stand the test of time. Our commitment
               to quality and customer satisfaction has made us a trusted name in the industry.
             </p>
@@ -51,16 +52,18 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+          {/* Features Section */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 animate__animated animate__fadeIn animate__delay-2s">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="bg-white p-6 items-center text-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
               >
-                <div className="mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {feature.title}
-                </h3>
+                <div className="flex justify-center items-center mb-4">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-textColor mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}

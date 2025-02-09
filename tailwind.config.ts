@@ -17,6 +17,16 @@ export default {
         highlight: '#C0C0C0', // Silver
         textColor: '#333333',    // Charcoal Black
       },
+      animation: {
+        'fade-in': 'fadeIn 1s ease-out forwards',
+        'fade-in-delay': 'fadeIn 1s 0.3s ease-out forwards'
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' }
+        }
+      }
     },
   },
   plugins: [],

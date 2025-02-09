@@ -3,22 +3,6 @@ import React, { useState } from 'react';
 import SteelImageGallery from './imagemodal'; // Assuming this is the component that receives the 'gates' prop
 import { windows } from '@/commonConstant/constant'; // Ensure that this path is correct
 
-// Define the Gate interface to type-check the props being passed
-
-// The Home component that will pass the gates array to SteelImageGallery
-// export default function SteelGateGallery() {
-//   return <SteelImageGallery gates={gates} />; // Ensure gates is being passed as a prop
-// }
-
-// Define the Gate interface to type-check the props being passed
-
-// The Home component that will pass the gates array to SteelImageGallery
-// export default function SteelGateGallery() {
-//   return <SteelImageGallery gates={gates} />; // Ensure gates is being passed as a prop
-// }
-
-
-
 const WindowProject = () => {
   const [filter, setFilter] = useState('all');
 
@@ -29,12 +13,12 @@ const WindowProject = () => {
   return (
     <section className="py-14 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-            Our Latest Projects
+        <div className="items-center justify-center mb-12">
+          <h2 className="text-2xl font-bold text-textColor sm:text-3xl text-center">
+          Precision Window Craftsmanship: Tailored for Your Home’s Elegance
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Explore our portfolio of custom railings and window installations
+          <p className="mt-6 text-lg text-textColor text-center">
+          Upgrade your property with our high-quality, custom-made windows. Expertly designed to fit your style, our windows bring natural light, <br/>energy efficiency, and sophisticated charm to your home.
           </p>
         </div>
 
@@ -45,7 +29,7 @@ const WindowProject = () => {
               className={`px-6 py-2 text-sm font-medium rounded-l-md ${
                 filter === 'all'
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-50'
+                  : 'bg-white text-textColor hover:bg-gray-200'
               } border border-gray-200`}
             >
               All Window Projects
@@ -55,7 +39,7 @@ const WindowProject = () => {
               className={`px-6 py-2 text-sm font-medium ${
                 filter === 'aluminiumwindow'
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-50'
+                  : 'bg-white text-textColor hover:bg-gray-200'
               } border-t border-b border-gray-200`}
             >
               Aluminium Window
@@ -65,7 +49,7 @@ const WindowProject = () => {
               className={`px-6 py-2 text-sm font-medium rounded-r-md ${
                 filter === 'grillwindow'
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-50'
+                  : 'bg-white text-textColor hover:bg-gray-200'
               } border border-gray-200`}
             >
               Grill Window

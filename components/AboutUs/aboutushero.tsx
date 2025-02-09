@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "next/link";
-import { Shield, Users, Award, Clock, } from 'lucide-react';
-import { ArrowRight } from 'lucide-react';
+import { Shield, Users, Award, Clock } from 'lucide-react';
+import 'animate.css';
 
 const features = [
   {
@@ -25,8 +25,8 @@ const features = [
     description: 'On-time project completion and professional installation.'
   }
 ];
-const AboutUsHero = () => {
 
+const AboutUsHero = () => {
   return (
     <section className="bg-gray-50">
       <div className="relative min-h-screen">
@@ -46,25 +46,18 @@ const AboutUsHero = () => {
         <div className="relative z-10 flex items-center justify-center min-h-screen">
           <div className="text-center px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
-              We Provides Premium Railing & Window Solutions
+              We Provide Premium Railing & Window Solutions
             </h1>
             <p className="text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
               Elevate your space with custom designs, exceptional durability, and unmatched safety
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link href="/service-form" className="bg-blue-600 text-white px-8 py-3 rounded-md flex items-center space-x-2 hover:bg-blue-700 transition-all transform hover:scale-105">
+              <Link href="/service-form" className="bg-blue-600 text-white px-8 py-3 rounded-md flex items-center space-x-2 hover:bg-blue-700 transition-all transform hover:scale-105">
                 <span>Get Quote</span>
-                </Link>
-                <Link href="/railingproject" className="bg-transparent border-2 border-white text-white px-4 py-3 rounded-md hover:bg-white hover:text-gray-900 transition-all transform hover:scale-105">
+              </Link>
+              <Link href="/railingproject" className="bg-transparent border-2 border-white text-white px-4 py-3 rounded-md hover:bg-white hover:text-gray-900 transition-all transform hover:scale-105">
                 <span>View Our Work</span>
-                </Link>
-              {/* <button className="bg-blue-600 text-white px-8 py-3 rounded-md flex items-center space-x-2 hover:bg-blue-700 transition-all transform hover:scale-105">
-                <span>Get Quote</span>
-                {/* <ArrowRight size={20} />
-              </button>
-              <button className="bg-transparent border-2 border-white text-white px-4 py-3 rounded-md hover:bg-white hover:text-gray-900 transition-all transform hover:scale-105">
-                View Our Work
-              </button> */}
+              </Link>
             </div>
           </div>
         </div>
@@ -79,8 +72,9 @@ const AboutUsHero = () => {
 
       <div className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-          <div className="mb-12 lg:mb-0">
-            <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mb-6">
+          {/* Text Section */}
+          <div className="mb-12 lg:mb-0 animate__animated animate__fadeIn animate__delay-1s">
+            <h2 className="text-3xl font-bold text-textColor sm:text-4xl mb-6">
               Crafting Excellence in Every Detail
             </h2>
             <p className="text-lg text-gray-600 mb-8">
@@ -100,16 +94,18 @@ const AboutUsHero = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+          {/* Features Section */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 animate__animated animate__fadeIn animate__delay-2s">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="bg-white p-6 items-center text-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:scale-105"
               >
-                <div className="mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {feature.title}
-                </h3>
+                <div className="flex justify-center items-center mb-4">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-textColor mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}

@@ -55,14 +55,14 @@ const HomePageContact = () => {
                   <Phone className="w-6 h-6 text-blue-600 mt-1 mr-4" />
                   <div>
                     <p className="font-medium text-textColor">Phone</p>
-                    <p className="text-textColor">+1 (555) 123-4567</p>
+                    <p className="text-textColor">+91 9284614864</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Mail className="w-6 h-6 text-blue-600 mt-1 mr-4" />
                   <div>
                     <p className="font-medium text-textColor">Email</p>
-                    <p className="text-textColor">info@steelcraft.com</p>
+                    <p className="text-textColor">contact.servicesphere247@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -70,9 +70,9 @@ const HomePageContact = () => {
                   <div>
                     <p className="font-medium text-textColor">Address</p>
                     <p className="text-textColor">
-                      123 Craftsmanship Lane<br />
-                      Suite 100<br />
-                      Design District, NY 10001
+                      Jay Jalaram Nagar,Kharbi Road<br />
+                      Near Mata Mandir Bus Stop, Wathoda Lay Out<br />
+                      Nagpur, Maharashtra 440034
                     </p>
                   </div>
                 </div>
@@ -81,8 +81,8 @@ const HomePageContact = () => {
                   <div>
                     <p className="font-medium text-textColor">Business Hours</p>
                     <p className="text-textColor">
-                      Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday: 10:00 AM - 4:00 PM<br />
+                      Monday - Friday: 10:00 AM - 8:00 PM<br />
+                      Saturday: 10:00 AM - 6:00 PM<br />
                       Sunday: Closed
                     </p>
                   </div>

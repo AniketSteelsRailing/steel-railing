@@ -48,10 +48,10 @@ const ContactUs = () => {
             <span className="block w-12 h-0.5 bg-primary absolute justify-center md:left-0 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
           <p className="text-textColor">
-            Gadget Fixers Services <br />
-            Baba Farid Nagar, <br />
-            Near Nagoba Sai Mandir, Faras <br />
-            Zingabai Takali 440030
+            Modern Steel Railing Services <br />
+            Jay Jalaram Nagar,Kharbi Road, <br />
+            Near Mata Mandir Bus Stop, Wathoda Lay Out<br />
+            Nagpur, Maharashtra 440034
           </p>
         </div>
 
@@ -61,7 +61,7 @@ const ContactUs = () => {
             Phone
             <span className="block w-12 h-0.5 bg-primary absolute justify-center md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
-          <p className="text-textColor">+91 9172790843</p>
+          <p className="text-textColor">+91 9284614864</p>
         </div>
 
         {/* Email */}
@@ -70,7 +70,7 @@ const ContactUs = () => {
             Email
             <span className="block w-12 h-0.5 bg-primary absolute justify-center md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
-          <p className="text-textColor">contact.gadgetfixers@gmail.com</p>
+          <p className="text-textColor max-w-10">contact.servicesphere247@gmail.com</p>
         </div>
 
         {/* Social Media */}
@@ -80,7 +80,7 @@ const ContactUs = () => {
             <span className="block w-12 h-0.5 bg-primary absolute justify-center md:left-0 -bottom-1 transform -translate-x-1/2 md:translate-x-0"></span>
           </h3>
           <div className="flex space-x-4 md:justify-start mt-2">
-            <a href="https://www.facebook.com/gadgetfixers2.0/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
+            <a href="https://www.facebook.com/profile.php?id=61572803536784&sk=ma" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
                 src="/Images/facebook.png"
                 height={30}
@@ -90,7 +90,7 @@ const ContactUs = () => {
                 className="rounded-lg"
               />
             </a>
-            <a href="https://www.instagram.com/gadgetfixer2.0/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
+            {/* <a href="https://www.instagram.com/gadgetfixer2.0/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
                 src="/Images/instagram.png"
                 height={30}
@@ -99,8 +99,8 @@ const ContactUs = () => {
                 objectFit="cover"
                 className="rounded-lg"
               />
-            </a>
-            <a href="https://www.linkedin.com/in/gadget-fixers/" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
+            </a> */}
+            <a href="https://www.linkedin.com/in/servicesphere247" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
                 src="/Images/linkedin.png"
                 height={30}
@@ -110,7 +110,7 @@ const ContactUs = () => {
                 className="rounded-lg"
               />
             </a>
-            <a href="https://wa.me/9172790843" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
+            <a href="https://wa.me/9284614864" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
                 src="/Images/whatsapp.png"
                 height={30}
@@ -120,7 +120,7 @@ const ContactUs = () => {
                 className="rounded-lg"
               />
             </a>
-            <a href="https://www.youtube.com/@gadgetfixer-x8w" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
+            {/* <a href="https://www.youtube.com/@gadgetfixer-x8w" className="text-gray-500 hover:text-gray-700 transform transition duration-300 ease-in-out hover:scale-110">
               <Image
                 src="/Images/youtube.png"
                 height={30}
@@ -129,7 +129,7 @@ const ContactUs = () => {
                 objectFit="cover"
                 className="rounded-lg"
               />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

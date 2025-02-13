@@ -98,16 +98,16 @@ const Footer = () => {
         <h4 className="text-lg font-bold mb-4 text-center sm:text-left">FOLLOW US</h4>
         <ul className="list-none mb-0 sm:text-left text-center">
           <li className="mb-2">
-            <a href="https://wa.me/9172790843" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
+            <a href="https://wa.me/9284614864" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
               <i className="fab fa-whatsapp mr-2"></i> Whatsapp
             </a>
           </li>
           <li className="mb-2">
-            <a href="https://www.facebook.com/gadgetfixers2.0/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
+            <a href="https://www.facebook.com/profile.php?id=61572803536784&sk=map" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
               <i className="fab fa-facebook-f mr-2"></i> Facebook
             </a>
           </li>
-          <li className="mb-2">
+          {/* <li className="mb-2">
             <a href="https://www.instagram.com/gadgetfixer2.0/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
               <i className="fab fa-instagram mr-2"></i> Instagram
             </a>
@@ -116,13 +116,13 @@ const Footer = () => {
             <a href="https://www.youtube.com/@gadgetfixer-x8w" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
               <i className="fab fa-youtube mr-2"></i> Youtube
             </a>
-          </li>
+          </li> */}
           <li className="mb-2">
-            <a href="https://www.linkedin.com/in/gadget-fixers/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
+            <a href="https://www.linkedin.com/in/servicesphere247" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
               <i className="fab fa-linkedin mr-2"></i> LinkedIn
             </a>
           </li>
-          <li className="mb-2">
+          {/* <li className="mb-2">
             <a href=" https://twitter.com/@gadget_fixers" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
               <i className="fab fa-twitter mr-2"></i> Twitter
             </a>
@@ -131,7 +131,7 @@ const Footer = () => {
             <a href="https://www.threads.net/@gadgetfixer2.0" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
               <i className="fab fa-threads mr-2"></i> Threads
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
 
@@ -162,13 +162,13 @@ const Footer = () => {
             </p>
           </li>
           <li className="mb-2">
-            <a href="https://wa.me/9172790843" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
-              <i className="fas fa-phone mr-2"></i>+91 7972321411
+            <a href="https://wa.me/9284614864" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
+              <i className="fas fa-phone mr-2"></i>+91 9284614864
             </a>
           </li>
           <li className="mb-2">
             <a href="mailto:contact.gadgetfixers@gmail.com?subject=Inquiry&body=Hello%20GadgetFixers!" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
-              <i className="fas fa-envelope mr-1"></i> contact.gadgetfixers@gmail.com
+              <i className="fas fa-envelope mr-1"></i> contact.servicesphere247@gmail.com
             </a>
           </li>
         </ul>

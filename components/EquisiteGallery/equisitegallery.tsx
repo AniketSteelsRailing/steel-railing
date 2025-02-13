@@ -8,42 +8,42 @@ export default function Gallery() {
     {
       title: 'Transform Your Space',
       description: 'Elevate your property with our tailored railing solutions, combining aesthetic appeal with superior safety.',
-      image: '/Images/gallery3.png',
+      image: '/Images/otherImages/steel_rail1.png',
     },
     {
       title: 'Unmatched Quality',
       description: 'Our precision window installations are designed to improve energy efficiency while enhancing your property’s visual appeal.',
-      image: '/Images/gallery5.png',
+      image: '/Images/otherImages/alumwin1.png',
     },
     {
       title: 'Safety and Durability',
       description: 'Our railings are built with the highest standards of safety and durability, ensuring peace of mind for every homeowner.',
-      image: '/Images/gallery4.png',
+      image: '/Images/otherImages/steel_rail4.png',
     },
     {
       title: 'Custom Designs',
       description: 'Bespoke railing designs tailored to fit your unique style and functional needs can transform any space into a statement.',
-      image: '/Images/gallery2.png',
+      image: '/Images/otherImages/steel_rail3.png',
     },
     {
       title: 'Elevate Aesthetics',
       description: 'Windows that match your décor and enhance your home’s charm while maintaining energy efficiency are within your reach.',
-      image: '/Images/gallery9.png',
+      image: '/Images/otherImages/alumwin2.png',
     },
     {
       title: 'Precision Installation',
       description: 'Our expert team guarantees seamless installations, adhering to the tightest schedules while maintaining the highest standards.',
-      image: '/Images/gallery7.png',
+      image: '/Images/otherImages/slide_gate1.png',
     },
     {
       title: 'Inspiring Craftsmanship',
       description: 'Highlighting fine details, each railing and window reflects a commitment to artistry and quality that you can rely on.',
-      image: '/Images/gallery8.png',
+      image: '/Images/otherImages/glass_rail1.png',
     },
     {
       title: 'Timeless Appeal',
       description: 'Discover how our premium materials and sleek designs combine to create enduring beauty in your living and workspaces.',
-      image: '/Images/gallery6.png',
+      image: '/Images/otherImages/billboard.png',
     },
   ];
 

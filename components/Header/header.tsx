@@ -169,7 +169,7 @@ const Header = () => {
                 <Link href="/service-form" className="bg-blue-500 text-white px-5 py-3 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
                   {Get_Quote}
                 </Link>
-                <a href="https://wa.me/9172790843" className="relative text-right text-top text-gray-500 hover:text-gray-700">
+                <a href="https://wa.me/9284614864" className="relative text-right text-top text-gray-500 hover:text-gray-700">
                   <Image
                     src="/Images/whatsapp.png"
                     height={40}

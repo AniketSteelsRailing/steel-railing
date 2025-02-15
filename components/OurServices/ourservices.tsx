@@ -1,28 +1,5 @@
 import React from 'react';
-import { Shield, AppWindow as Window, PenTool as Tool, Settings } from 'lucide-react';
-
-const services = [
-  {
-    icon: <Shield className="w-12 h-12 text-blue-600" />,
-    title: 'Custom Railing Design',
-    description: 'Bespoke railing solutions tailored to your specific needs and style preferences.'
-  },
-  {
-    icon: <Window className="w-12 h-12 text-blue-600" />,
-    title: 'Window Installation',
-    description: 'Professional window installation services with energy-efficient options.'
-  },
-  {
-    icon: <Tool className="w-12 h-12 text-blue-600" />,
-    title: 'Repair Services',
-    description: 'Expert repair services for both railings and windows to ensure lasting durability.'
-  },
-  {
-    icon: <Settings className="w-12 h-12 text-blue-600" />,
-    title: 'Maintenance',
-    description: 'Regular maintenance services to keep your installations in perfect condition.'
-  }
-];
+import { services } from "@/commonConstant/constant"
 
 const OurServices = () => {
   return (

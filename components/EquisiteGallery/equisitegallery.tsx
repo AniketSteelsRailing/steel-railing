@@ -2,51 +2,9 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { galleryItems } from "@/commonConstant/constant"
 
 export default function Gallery() {
-  const galleryItems = [
-    {
-      title: 'Transform Your Space',
-      description: 'Elevate your property with our tailored railing solutions, combining aesthetic appeal with superior safety.',
-      image: '/Images/otherImages/steel_rail1.png',
-    },
-    {
-      title: 'Unmatched Quality',
-      description: 'Our precision window installations are designed to improve energy efficiency while enhancing your property’s visual appeal.',
-      image: '/Images/otherImages/alumwin1.png',
-    },
-    {
-      title: 'Safety and Durability',
-      description: 'Our railings are built with the highest standards of safety and durability, ensuring peace of mind for every homeowner.',
-      image: '/Images/otherImages/steel_rail4.png',
-    },
-    {
-      title: 'Custom Designs',
-      description: 'Bespoke railing designs tailored to fit your unique style and functional needs can transform any space into a statement.',
-      image: '/Images/otherImages/steel_rail3.png',
-    },
-    {
-      title: 'Elevate Aesthetics',
-      description: 'Windows that match your décor and enhance your home’s charm while maintaining energy efficiency are within your reach.',
-      image: '/Images/otherImages/alumwin2.png',
-    },
-    {
-      title: 'Precision Installation',
-      description: 'Our expert team guarantees seamless installations, adhering to the tightest schedules while maintaining the highest standards.',
-      image: '/Images/otherImages/slide_gate1.png',
-    },
-    {
-      title: 'Inspiring Craftsmanship',
-      description: 'Highlighting fine details, each railing and window reflects a commitment to artistry and quality that you can rely on.',
-      image: '/Images/otherImages/glass_rail1.png',
-    },
-    {
-      title: 'Timeless Appeal',
-      description: 'Discover how our premium materials and sleek designs combine to create enduring beauty in your living and workspaces.',
-      image: '/Images/otherImages/billboard.png',
-    },
-  ];
-
   return (
     <section className="px-6 md:px-12 py-12 bg-white">
       <h2 className="text-3xl md:text-4xl font-bold text-textColor text-center mb-8">

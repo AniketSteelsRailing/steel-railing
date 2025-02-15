@@ -1,29 +1,6 @@
 import React from 'react';
-import { Shield, Users, Award, Clock } from 'lucide-react';
 import 'animate.css';
-
-const features = [
-  {
-    icon: <Shield className="w-12 h-12 text-blue-600" />,
-    title: '20+ Years Experience',
-    description: 'Decades of expertise in custom railing and window solutions.'
-  },
-  {
-    icon: <Users className="w-12 h-12 text-blue-600" />,
-    title: 'Expert Team',
-    description: 'Highly skilled craftsmen and certified installers.'
-  },
-  {
-    icon: <Award className="w-12 h-12 text-blue-600" />,
-    title: 'Quality Guaranteed',
-    description: 'Premium materials and industry-leading warranties.'
-  },
-  {
-    icon: <Clock className="w-12 h-12 text-blue-600" />,
-    title: 'Timely Delivery',
-    description: 'On-time project completion and professional installation.'
-  }
-];
+import { features } from "@/commonConstant/constant"
 
 const AboutUs = () => {
   return (

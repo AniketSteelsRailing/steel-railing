@@ -1,62 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-
-const projects = [
-  {
-    id: 1,
-    title: 'Modern Staircase Railing',
-    category: 'railings',
-    image: '\/images\/railingImages\/glassRailing\/glass_rail1.png'
-  },
-  {
-    id: 2,
-    title: 'Energy-Efficient Windows',
-    category: 'windows',
-    image: '\/images\/windowImages\/aluminiumWin\/alumwin10.png'
-  },
-  {
-    id: 3,
-    title: 'Glass Balcony Railing',
-    category: 'railings',
-    image: '\/images\/railingImages\/glassRailing\/glass_rail7.png'
-  },
-  {
-    id: 4,
-    title: 'Commercial Windows',
-    category: 'windows',
-    image: '\/images\/windowImages\/aluminiumWin\/alumwin7.png'
-  },
-  {
-    id: 5,
-    title: 'Commercial Gates',
-    category: 'gates',
-    image: '\/images\/gateImages\/slidinggate\/slide_gate5.png'
-  },
-  {
-    id: 6,
-    title: 'Custom Steel Railing',
-    category: 'railings',
-    image: '\/images\/railingImages\/steelRailing\/steel_rai4.png'
-  },
-  {
-    id: 7,
-    title: 'Custom Sliding Gates',
-    category: 'gates',
-    image: '\/images\/gateImages\/slidinggate\/slide_gate1.png'
-  },
-  {
-    id: 8,
-    title: 'Residential Windows',
-    category: 'windows',
-    image: '\/images\/windowImages\/steelGrillWin\/grill_win2.png'
-  },
-  {
-    id: 9,
-    title: 'Residential Gates',
-    category: 'gates',
-    image: '\/images\/gateImages\/doubledoorgate\/door_gate9.png'
-  }
-];
+import { projects } from "@/commonConstant/constant"
 
 const OurRailingProject = () => {
   const [filter, setFilter] = useState('all');

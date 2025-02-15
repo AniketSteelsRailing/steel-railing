@@ -10,10 +10,10 @@ export async function POST(request: Request) {
       phone,
       address,
       pincode,
-      device,
-      brand_model,
-      device_version,
-      issue,
+      railing_service,
+      window_service,
+      gate_service,
+      message,
     } = body;
     const newRequest = await prisma.request.create({
       data: {
@@ -21,10 +21,10 @@ export async function POST(request: Request) {
         phone,
         address,
         pincode,
-        device,
-        brand_model,
-        device_version,
-        issue,
+        railing_service,
+        window_service,
+        gate_service,
+        message,
       },
     });
 

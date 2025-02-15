@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Dialog } from '@headlessui/react';
-
 interface Gate {
   id: number;
   title: string;
@@ -45,11 +44,11 @@ const SteelImageGallery: React.FC<SteelImageGalleryProps> = ({ gates }) => {
     }
   };
 
-  const [quantity, setQuantity] = useState(1);
+  // const [quantity, setQuantity] = useState(1);
 
-  const handleQuantityChange = (delta: number) => {
-    setQuantity((prev) => Math.max(1, prev + delta));
-  };
+  // const handleQuantityChange = (delta: number) => {
+  //   setQuantity((prev) => Math.max(1, prev + delta));
+  // };
 
   return (
     <div className="container mx-auto p-4">

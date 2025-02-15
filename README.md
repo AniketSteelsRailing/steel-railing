@@ -47,3 +47,19 @@ Package Used for conditional class attribute in header component
 npm install clsx
 import clsx from "clsx"; // Import clsx for conditional class names
 -->
+
+# Install dependencies
+npm install @prisma/client
+npm install prisma --save-dev
+
+# Initialize Prisma
+npx prisma init
+
+# Run migration
+npx prisma migrate dev --name init
+
+# Generate Prisma client
+npx prisma generate
+
+# Start Next.js app
+npm run dev

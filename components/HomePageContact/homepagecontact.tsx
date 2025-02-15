@@ -1,31 +1,9 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-import AuthForm from '../authentication/authform';
 import BookServiceForm from '../Form/form';
 
 const HomePageContact = () => {
-  const [message, setMessage] = useState("");
-  const [isSuccessful, setIsSuccessful] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-
-  const handleQuery = async (data: { fname: string; lname: string; email: string; phone: string; message: string; }) => {
-    const res = await fetch("/api/auth/password/register", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-    const result = await res.json();
-    setMessage(result.message);
-
-    if (res.status === 201) {
-      setIsSuccessful(true);
-      setIsSuccess(true);
-    } else {
-      setIsSuccess(false);
-    }
-  };
-
   return (
     <section className="py-14 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,12 +17,8 @@ const HomePageContact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            {isSuccessful ? (
-              <p className="text-green-500 text-center text-lg font-semibold">Welcome!</p>
-            ) : (
+          <div>  
               <BookServiceForm />
-            )}
           </div>
 
           <div className="space-y-8">

@@ -1,31 +1,9 @@
 "use client";
 import React from "react";
 import Image from 'next/image';
-import { useState } from "react";
-import AuthForm from "../authentication/authform";
 import BookServiceForm from "../Form/form";
 
 const ContactUs = () => {
-  const [message, setMessage] = useState("");
-  const [isSuccessful, setIsSuccessful] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-
-  const handleQuery = async (data: { fname: string; lname: string; email: string; phone: string; message: string; }) => {
-    const res = await fetch("/api/auth/password/register", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-    const result = await res.json();
-    setMessage(result.message);
-
-    if (res.status === 201) {
-      setIsSuccessful(true);
-      setIsSuccess(true);
-    } else {
-      setIsSuccess(false);
-    }
-  };
 
   return (
     <section className="bg-gray-50 py-12">
@@ -150,12 +128,7 @@ const ContactUs = () => {
 
         {/* Contact Form */}
         <div className="w-full md:w-1/3">
-          {isSuccessful ? (
-            <p className="text-green-500 text-center text-lg font-semibold">Welcome!</p>
-          ) : (
             <BookServiceForm />
-            // <AuthForm mode="Query" onSubmit={handleQuery} />
-          )}
         </div>
       </div>
     </section>

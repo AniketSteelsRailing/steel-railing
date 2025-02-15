@@ -1,7 +1,5 @@
 "use client"
 import Link from "next/link";
-import NavLinks from "./navLinks";
-import logo from "../../public/logo/gf_logo_footer.png";
 import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";

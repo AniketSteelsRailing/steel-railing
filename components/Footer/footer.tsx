@@ -1,5 +1,3 @@
-import logo from "../../public/logo/gf_logo_footer.png";
-import Image from "next/image";
 import Link from "next/link";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -53,11 +51,6 @@ const Footer = () => {
               Contact Us
             </Link>
           </li>
-          {/* <li className="mb-2">
-            <Link href="/blogs" className="text-sm hover:text-textColor">
-              Blog
-            </Link>
-          </li> */}
         </ul>
       </div>
 
@@ -122,16 +115,6 @@ const Footer = () => {
               <i className="fab fa-linkedin mr-2"></i> LinkedIn
             </a>
           </li>
-          {/* <li className="mb-2">
-            <a href=" https://twitter.com/@gadget_fixers" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
-              <i className="fab fa-twitter mr-2"></i> Twitter
-            </a>
-          </li>
-          <li className="mb-2">
-            <a href="https://www.threads.net/@gadgetfixer2.0" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-textColor">
-              <i className="fab fa-threads mr-2"></i> Threads
-            </a>
-          </li> */}
         </ul>
       </div>
 

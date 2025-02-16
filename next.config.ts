@@ -1,7 +1,19 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+// // next.config.mjs
+/** 
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  // output: 'export',
+  images: {
+            remotePatterns: [
+              {
+                protocol: 'https',
+                hostname: 'fastly.picsum.photos',
+                port: '',
+                pathname: '/id/**', // Match all paths starting with "/id/"
+              },
+            ],
+          }
+}
+ 
+export default nextConfig

@@ -6,7 +6,7 @@ import BookServiceForm from "../Form/form";
 const ContactUs = () => {
 
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="py-12">
       {/* Section Header */}
       <div className="animate__animated animate__fadeIn animate__delay-1s">
         <h2 className="text-center text-3xl font-bold text-gray-700 mb-8 transform transition duration-300 ease-in-out hover:scale-105">

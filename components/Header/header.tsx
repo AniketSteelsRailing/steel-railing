@@ -66,7 +66,7 @@ const Header = () => {
                   className={clsx(
                     "px-4 py-5 text-white hover:bg-neutral font-semibold hover:text-textColor",
                     {
-                      "bg-neutral text-black": isActive(link.href), // Apply active styles
+                      "bg-neutral !text-black": isActive(link.href), // Apply active styles
                     }
                   )}
                 >

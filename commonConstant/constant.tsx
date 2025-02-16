@@ -368,7 +368,7 @@ export const gates = [
    {
     "id": 11,
     "title": "Compact Folding Gate",
-    "image": "/images/gateImages/doubledoorgate/slide_gate1.png",
+    "image": "/images/gateImages/slidinggate/slide_gate1.png",
     "description": "Compact and versatile folding gate for narrow spaces.",
     "brand": "S13",
     "sku": "GATE11",
@@ -383,7 +383,7 @@ export const gates = [
    {
     "id": 12,
     "title": "Traditional Wooden Gate",
-    "image": "/images/gateImages/doubledoorgate/slide_gate2.png",
+    "image": "/images/gateImages/slidinggate/slide_gate2.png",
     "description": "Traditional wooden gate with a classic design.",
     "brand": "S14",
     "sku": "GATE12",
@@ -398,7 +398,7 @@ export const gates = [
    {
     "id": 13,
     "title": "High Security Steel Gate",
-    "image": "/images/gateImages/doubledoorgate/slide_gate3.png",
+    "image": "/images/gateImages/slidinggate/slide_gate3.png",
     "description": "High security steel gate with reinforced bars.",
     "brand": "S15",
     "sku": "GATE13",

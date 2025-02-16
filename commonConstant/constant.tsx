@@ -87,31 +87,31 @@ export const projects = [
 export const testimonials = [
   {
     name: 'Rakesh Sharma',
-    image: '/Images/boy1.png',
+    image: '/images/boy1.png',
     rating: '⭐⭐⭐⭐⭐',
     feedback: 'Modern steel railing team transformed our home with stunning railings that not only look beautiful but also enhance our safety. The team was professional and attentive to our needs.',
   },
   {
     name: 'Arjun Sing',
-    image: '/Images/boy2.png',
+    image: '/images/boy2.png',
     rating: '⭐⭐⭐⭐⭐',
     feedback: 'The window installation service was seamless from start to finish. The new windows have made a huge difference in energy efficiency and appearance. Highly recommend!',
   },
   {
     name: 'Krishna Reddy',
-    image: '/Images/boy3.png',
+    image: '/images/boy3.png',
     rating: '⭐⭐⭐⭐⭐',
     feedback: 'Our experience with modern steel railing team was fantastic. They delivered on time and exceeded our expectations with their attention to detail. Our new railings are a perfect blend of functionality and style.',
   },
   {
     name: 'Aahana Kapoor',
-    image: '/Images/girl1.png',
+    image: '/images/girl1.png',
     rating: '⭐⭐⭐⭐⭐',
     feedback: 'Working with modern steel railing team was a fantastic experience. They delivered ahead of schedule and their attention to detail was remarkable. The railings are not only stylish but also incredibly sturdy, adding the perfect finishing touch to our home',
   },
   {
     name: 'Ishani Yadav',
-    image: '/Images/girl2.png',
+    image: '/images/girl2.png',
     rating: '⭐⭐⭐⭐⭐',
     feedback: 'modern steel railing team truly impressed us with their service. From the initial consultation to the final installation, everything was seamless. The new windows and railings have transformed our home, combining both beauty and durability.',
   }
@@ -121,42 +121,42 @@ export const galleryItems = [
   {
     title: 'Transform Your Space',
     description: 'Elevate your property with our tailored railing solutions, combining aesthetic appeal with superior safety.',
-    image: '/Images/otherImages/steel_rail1.png',
+    image: '/images/otherImages/steel_rail1.png',
   },
   {
     title: 'Unmatched Quality',
     description: 'Our precision window installations are designed to improve energy efficiency while enhancing your property’s visual appeal.',
-    image: '/Images/otherImages/alumwin1.png',
+    image: '/images/otherImages/alumwin1.png',
   },
   {
     title: 'Safety and Durability',
     description: 'Our railings are built with the highest standards of safety and durability, ensuring peace of mind for every homeowner.',
-    image: '/Images/otherImages/steel_rail4.png',
+    image: '/images/otherImages/steel_rail4.png',
   },
   {
     title: 'Custom Designs',
     description: 'Bespoke railing designs tailored to fit your unique style and functional needs can transform any space into a statement.',
-    image: '/Images/otherImages/steel_rail3.png',
+    image: '/images/otherImages/steel_rail3.png',
   },
   {
     title: 'Elevate Aesthetics',
     description: 'Windows that match your décor and enhance your home’s charm while maintaining energy efficiency are within your reach.',
-    image: '/Images/otherImages/alumwin2.png',
+    image: '/images/otherImages/alumwin2.png',
   },
   {
     title: 'Precision Installation',
     description: 'Our expert team guarantees seamless installations, adhering to the tightest schedules while maintaining the highest standards.',
-    image: '/Images/otherImages/slide_gate1.png',
+    image: '/images/otherImages/slide_gate1.png',
   },
   {
     title: 'Inspiring Craftsmanship',
     description: 'Highlighting fine details, each railing and window reflects a commitment to artistry and quality that you can rely on.',
-    image: '/Images/otherImages/glass_rail1.png',
+    image: '/images/otherImages/glass_rail1.png',
   },
   {
     title: 'Timeless Appeal',
     description: 'Discover how our premium materials and sleek designs combine to create enduring beauty in your living and workspaces.',
-    image: '/Images/otherImages/billboard.png',
+    image: '/images/otherImages/billboard.png',
   },
 ];
 

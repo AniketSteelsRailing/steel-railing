@@ -2,7 +2,7 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import BookServiceForm from '../Form/form';
-
+import Link from 'next/link';
 const HomePageContact = () => {
   return (
     <section className="py-14 bg-gray-50">
@@ -72,10 +72,10 @@ const HomePageContact = () => {
               <p className="text-textColor mb-2">
                 We provide fast, reliable emergency services for steel railings, windows, and gates. Whether it's urgent repairs, replacements, or installations, our expert team is available.
               </p>
-              <button className="w-full bg-red-400 text-white px-6 py-3 rounded-md hover:bg-red-700 transition-colors flex items-center justify-center">
+              <Link href="tel:+919284614864" className="w-full bg-red-400 text-white px-6 py-3 rounded-md hover:bg-red-700 transition-colors flex items-center justify-center">
                 <Phone className="w-5 h-5 mr-2" />
                 Emergency Hotline
-              </button>
+              </Link>
             </div>
           </div>
         </div>

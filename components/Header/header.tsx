@@ -42,7 +42,7 @@ const Header = () => {
     <header className="w-full top-0 left-0 z-30 bg-primary">
       <div className="flex justify-left">
         {/* Logo Section */}
-        <div className="container flex justify-between items-center px-6 py-1">
+        <div className="container flex justify-between items-center px-6 py-4">
           <div className="text-2xl font-bold flex items-center">
             <Link href="/">
               {/* <Image
@@ -58,13 +58,13 @@ const Header = () => {
           {/* Navigation Links - Collapse on small screens */}
           <div className="hidden lg:flex flex-grow justify-end items-center h-full">
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex">
+            <nav className="hidden md:flex gap-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   className={clsx(
-                    "px-4 py-5 text-white hover:bg-neutral font-semibold hover:text-textColor",
+                    "px-4 py-2 text-white hover:bg-neutral font-semibold hover:text-textColor rounded-md",
                     {
                       "bg-neutral !text-black": isActive(link.href), // Apply active styles
                     }

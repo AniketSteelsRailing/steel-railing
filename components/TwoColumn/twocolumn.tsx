@@ -15,7 +15,7 @@ export default function RailingSolutions() {
       >
         <div className="absolute inset-0 bg-teal-100 rounded-lg scale-110 -z-10"></div>
         <Image
-          src="/Images/gallery1.png" // Ensure the correct path
+          src="/Images/railingImages/glassRailing/glass_rail1.png" // Ensure the correct path
           alt="Glass Railing"
           width={600}
           height={400}

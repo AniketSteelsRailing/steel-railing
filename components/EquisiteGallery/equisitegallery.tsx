@@ -1,6 +1,4 @@
 'use client';
-
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { galleryItems } from "@/commonConstant/constant"
 
@@ -19,7 +17,7 @@ export default function Gallery() {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="bg-white shadow-lg rounded-lg overflow-hidden"
           >
-            <Image
+            <img
               src={item.image}
               alt={item.title}
               width={500}

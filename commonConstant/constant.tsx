@@ -32,86 +32,86 @@ export const projects = [
     id: 1,
     title: 'Modern Staircase Railing',
     category: 'railings',
-    image: '/images/railingImages/glassRailing/glass_rail1.png'
+    image: '/Images/railingImages/glassRailing/glass_rail1.png'
   },
   {
     id: 2,
     title: 'Energy-Efficient Windows',
     category: 'windows',
-    image: '/images/windowImages/aluminiumWin/alumwin10.png'
+    image: '/Images/windowImages/aluminiumWin/alumwin10.png'
   },
   {
     id: 3,
     title: 'Glass Balcony Railing',
     category: 'railings',
-    image: '/images/railingImages/glassRailing/glass_rail7.png'
+    image: '/Images/railingImages/glassRailing/glass_rail7.png'
   },
   {
     id: 4,
     title: 'Commercial Windows',
     category: 'windows',
-    image: '/images/windowImages/aluminiumWin/alumwin7.png'
+    image: '/Images/windowImages/aluminiumWin/alumwin7.png'
   },
   {
     id: 5,
     title: 'Commercial Gates',
     category: 'gates',
-    image: '/images/gateImages/slidinggate/slide_gate5.png'
+    image: '/Images/gateImages/slidinggate/slide_gate5.png'
   },
   {
     id: 6,
     title: 'Custom Steel Railing',
     category: 'railings',
-    image: '/images/railingImages/steelRailing/steel_rai4.png'
+    image: '/Images/railingImages/steelRailing/steel_rai4.png'
   },
   {
     id: 7,
     title: 'Custom Sliding Gates',
     category: 'gates',
-    image: '/images/gateImages/slidinggate/slide_gate1.png'
+    image: '/Images/gateImages/slidinggate/slide_gate1.png'
   },
   {
     id: 8,
     title: 'Residential Windows',
     category: 'windows',
-    image: '/images/windowImages/steelGrillWin/grill_win2.png'
+    image: '/Images/windowImages/steelGrillWin/grill_win2.png'
   },
   {
     id: 9,
     title: 'Residential Gates',
     category: 'gates',
-    image: '/images/gateImages/doubledoorgate/door_gate9.png'
+    image: '/Images/gateImages/doubledoorgate/door_gate9.png'
   }
 ];
 
 export const testimonials = [
   {
     name: 'Rakesh Sharma',
-    image: '/images/boy1.png',
+    image: '/Images/boy1.png',
     rating: '⭐⭐⭐⭐⭐',
     feedback: 'Modern steel railing team transformed our home with stunning railings that not only look beautiful but also enhance our safety. The team was professional and attentive to our needs.',
   },
   {
     name: 'Arjun Sing',
-    image: '/images/boy2.png',
+    image: '/Images/boy2.png',
     rating: '⭐⭐⭐⭐⭐',
     feedback: 'The window installation service was seamless from start to finish. The new windows have made a huge difference in energy efficiency and appearance. Highly recommend!',
   },
   {
     name: 'Krishna Reddy',
-    image: '/images/boy3.png',
+    image: '/Images/boy3.png',
     rating: '⭐⭐⭐⭐⭐',
     feedback: 'Our experience with modern steel railing team was fantastic. They delivered on time and exceeded our expectations with their attention to detail. Our new railings are a perfect blend of functionality and style.',
   },
   {
     name: 'Aahana Kapoor',
-    image: '/images/girl1.png',
+    image: '/Images/girl1.png',
     rating: '⭐⭐⭐⭐⭐',
     feedback: 'Working with modern steel railing team was a fantastic experience. They delivered ahead of schedule and their attention to detail was remarkable. The railings are not only stylish but also incredibly sturdy, adding the perfect finishing touch to our home',
   },
   {
     name: 'Ishani Yadav',
-    image: '/images/girl2.png',
+    image: '/Images/girl2.png',
     rating: '⭐⭐⭐⭐⭐',
     feedback: 'modern steel railing team truly impressed us with their service. From the initial consultation to the final installation, everything was seamless. The new windows and railings have transformed our home, combining both beauty and durability.',
   }
@@ -121,42 +121,42 @@ export const galleryItems = [
   {
     title: 'Transform Your Space',
     description: 'Elevate your property with our tailored railing solutions, combining aesthetic appeal with superior safety.',
-    image: '/images/otherImages/steel_rail1.png',
+    image: '/Images/otherImages/steel_rail1.png',
   },
   {
     title: 'Unmatched Quality',
     description: 'Our precision window installations are designed to improve energy efficiency while enhancing your property’s visual appeal.',
-    image: '/images/otherImages/alumwin1.png',
+    image: '/Images/otherImages/alumwin1.png',
   },
   {
     title: 'Safety and Durability',
     description: 'Our railings are built with the highest standards of safety and durability, ensuring peace of mind for every homeowner.',
-    image: '/images/otherImages/steel_rail4.png',
+    image: '/Images/otherImages/steel_rail4.png',
   },
   {
     title: 'Custom Designs',
     description: 'Bespoke railing designs tailored to fit your unique style and functional needs can transform any space into a statement.',
-    image: '/images/otherImages/steel_rail3.png',
+    image: '/Images/otherImages/steel_rail3.png',
   },
   {
     title: 'Elevate Aesthetics',
     description: 'Windows that match your décor and enhance your home’s charm while maintaining energy efficiency are within your reach.',
-    image: '/images/otherImages/alumwin2.png',
+    image: '/Images/otherImages/alumwin2.png',
   },
   {
     title: 'Precision Installation',
     description: 'Our expert team guarantees seamless installations, adhering to the tightest schedules while maintaining the highest standards.',
-    image: '/images/otherImages/slide_gate1.png',
+    image: '/Images/otherImages/slide_gate1.png',
   },
   {
     title: 'Inspiring Craftsmanship',
     description: 'Highlighting fine details, each railing and window reflects a commitment to artistry and quality that you can rely on.',
-    image: '/images/otherImages/glass_rail1.png',
+    image: '/Images/otherImages/glass_rail1.png',
   },
   {
     title: 'Timeless Appeal',
     description: 'Discover how our premium materials and sleek designs combine to create enduring beauty in your living and workspaces.',
-    image: '/images/otherImages/billboard.png',
+    image: '/Images/otherImages/billboard.png',
   },
 ];
 
@@ -218,7 +218,7 @@ export const gates = [
   {
     "id": 1,
     "title": "Main Front Gate",
-    "image": "/images/gateImages/doubledoorgate/door_gate1.png",
+    "image": "/Images/gateImages/doubledoorgate/door_gate1.png",
     "description": "Elegant and modern main front gate design.",
     "brand": "S3",
     "sku": "GATE1",
@@ -233,7 +233,7 @@ export const gates = [
    {
     "id": 2,
     "title": "Stainless Steel Gate",
-    "image": "/images/gateImages/doubledoorgate/door_gate2.png",
+    "image": "/Images/gateImages/doubledoorgate/door_gate2.png",
     "description": "Durable and sleek stainless steel gate.",
     "brand": "S4",
     "sku": "GATE2",
@@ -248,7 +248,7 @@ export const gates = [
    {
     "id": 3,
     "title": "Iron Main Front Gate",
-    "image": "/images/gateImages/doubledoorgate/door_gate3.png",
+    "image": "/Images/gateImages/doubledoorgate/door_gate3.png",
     "description": "Classic and strong iron main front gate.",
     "brand": "S5",
     "sku": "GATE3",
@@ -263,7 +263,7 @@ export const gates = [
    {
     "id": 4,
     "title": "4 Folding Gate Design",
-    "image": "/images/gateImages/doubledoorgate/door_gate4.png",
+    "image": "/Images/gateImages/doubledoorgate/door_gate4.png",
     "description": "Space-saving 4 folding gate design.",
     "brand": "S6",
     "sku": "GATE4",
@@ -278,7 +278,7 @@ export const gates = [
    {
     "id": 5,
     "title": "Simple Iron Gate",
-    "image": "/images/gateImages/doubledoorgate/door_gate5.png",
+    "image": "/Images/gateImages/doubledoorgate/door_gate5.png",
     "description": "Minimalistic and simple iron gate.",
     "brand": "S7",
     "sku": "GATE5",
@@ -293,7 +293,7 @@ export const gates = [
    {
     "id": 6,
     "title": "Curtain Man Gate",
-    "image": "/images/gateImages/doubledoorgate/door_gate6.png",
+    "image": "/Images/gateImages/doubledoorgate/door_gate6.png",
     "description": "Intricately designed curtain man gate.",
     "brand": "S8",
     "sku": "GATE6",
@@ -308,7 +308,7 @@ export const gates = [
    {
     "id": 7,
     "title": "Modern Steel Gate",
-    "image": "/images/gateImages/doubledoorgate/door_gate7.png",
+    "image": "/Images/gateImages/doubledoorgate/door_gate7.png",
     "description": "Sleek modern design for residential properties.",
     "brand": "S9",
     "sku": "GATE7",
@@ -323,7 +323,7 @@ export const gates = [
    {
     "id": 8,
     "title": "Luxury Gate Design",
-    "image": "/images/gateImages/doubledoorgate/door_gate8.png",
+    "image": "/Images/gateImages/doubledoorgate/door_gate8.png",
     "description": "High-end luxury gate with intricate designs.",
     "brand": "S10",
     "sku": "GATE8",
@@ -338,7 +338,7 @@ export const gates = [
    {
     "id": 9,
     "title": "Steel Gate with Glass Panels",
-    "image": "/images/gateImages/doubledoorgate/door_gate9.png",
+    "image": "/Images/gateImages/doubledoorgate/door_gate9.png",
     "description": "Steel gate with glass panel inserts for added aesthetics.",
     "brand": "S11",
     "sku": "GATE9",
@@ -353,7 +353,7 @@ export const gates = [
    {
     "id": 10,
     "title": "Industrial Iron Gate",
-    "image": "/images/gateImages/doubledoorgate/door_gate10.png",
+    "image": "/Images/gateImages/doubledoorgate/door_gate10.png",
     "description": "Robust iron gate with industrial design.",
     "brand": "S12",
     "sku": "GATE10",
@@ -368,7 +368,7 @@ export const gates = [
    {
     "id": 11,
     "title": "Compact Folding Gate",
-    "image": "/images/gateImages/slidinggate/slide_gate1.png",
+    "image": "/Images/gateImages/slidinggate/slide_gate1.png",
     "description": "Compact and versatile folding gate for narrow spaces.",
     "brand": "S13",
     "sku": "GATE11",
@@ -383,7 +383,7 @@ export const gates = [
    {
     "id": 12,
     "title": "Traditional Wooden Gate",
-    "image": "/images/gateImages/slidinggate/slide_gate2.png",
+    "image": "/Images/gateImages/slidinggate/slide_gate2.png",
     "description": "Traditional wooden gate with a classic design.",
     "brand": "S14",
     "sku": "GATE12",
@@ -398,7 +398,7 @@ export const gates = [
    {
     "id": 13,
     "title": "High Security Steel Gate",
-    "image": "/images/gateImages/slidinggate/slide_gate3.png",
+    "image": "/Images/gateImages/slidinggate/slide_gate3.png",
     "description": "High security steel gate with reinforced bars.",
     "brand": "S15",
     "sku": "GATE13",
@@ -413,7 +413,7 @@ export const gates = [
    {
     "id": 14,
     "title": "Aluminum Gate",
-    "image": "/images/gateImages/slidinggate/slide_gate4.png",
+    "image": "/Images/gateImages/slidinggate/slide_gate4.png",
     "description": "Lightweight and durable aluminum gate.",
     "brand": "S16",
     "sku": "GATE14",
@@ -428,7 +428,7 @@ export const gates = [
    {
     "id": 15,
     "title": "Rustic Iron Gate",
-    "image": "/images/gateImages/slidinggate/slide_gate5.png",
+    "image": "/Images/gateImages/slidinggate/slide_gate5.png",
     "description": "Rustic design iron gate for vintage style homes.",
     "brand": "S17",
     "sku": "GATE15",
@@ -443,7 +443,7 @@ export const gates = [
    {
     "id": 16,
     "title": "Security Barrier Gate",
-    "image": "/images/gateImages/slidinggate/slide_gate6.png",
+    "image": "/Images/gateImages/slidinggate/slide_gate6.png",
     "description": "Security barrier gate for high-traffic areas.",
     "brand": "S18",
     "sku": "GATE16",
@@ -458,7 +458,7 @@ export const gates = [
    {
     "id": 17,
     "title": "Automatic Sliding Gate",
-    "image": "/images/gateImages/slidinggate/slide_gate7.png",
+    "image": "/Images/gateImages/slidinggate/slide_gate7.png",
     "description": "Automatic sliding gate with remote control.",
     "brand": "S19",
     "sku": "GATE17",
@@ -473,7 +473,7 @@ export const gates = [
    {
     "id": 18,
     "title": "Gate with LED Lights",
-    "image": "/images/gateImages/slidinggate/slide_gate8.png",
+    "image": "/Images/gateImages/slidinggate/slide_gate8.png",
     "description": "Modern gate with integrated LED lighting.",
     "brand": "S20",
     "sku": "GATE18",
@@ -488,7 +488,7 @@ export const gates = [
    {
     "id": 19,
     "title": "Modern Steel Gate",
-    "image": "/images/gateImages/slidinggate/slide_gate9.png",
+    "image": "/Images/gateImages/slidinggate/slide_gate9.png",
     "description": "Sleek, modern steel gate design for modern homes.",
     "brand": "S21",
     "sku": "GATE19",
@@ -503,7 +503,7 @@ export const gates = [
    {
     "id": 20,
     "title": "Wooden with Metal Inserts Gate",
-    "image": "/images/gateImages/slidinggate/slide_gate10.png",
+    "image": "/Images/gateImages/slidinggate/slide_gate10.png",
     "description": "Wooden gate with metal inserts for a stylish touch.",
     "brand": "S22",
     "sku": "GATE20",
@@ -521,7 +521,7 @@ export const railings = [
   {
     "id": 1,
     "title": "Glass Railing",
-    "image": "/images/railingImages/glassRailing/glass_rail1.png",
+    "image": "/Images/railingImages/glassRailing/glass_rail1.png",
     "description": "Solid steel railing with a contemporary, streamlined design.",
     "brand": "G1",
     "sku": "GLASSRAIL1",
@@ -536,7 +536,7 @@ export const railings = [
    {
     "id": 2,
     "title": "Glass Railing",
-    "image": "/images/railingImages/glassRailing/glass_rail2.png",
+    "image": "/Images/railingImages/glassRailing/glass_rail2.png",
     "description": "Sleek and transparent glass railing for modern elegance.",
     "brand": "G2",
     "sku": "GLASSRAIL2",
@@ -551,7 +551,7 @@ export const railings = [
    {
     "id": 3,
     "title": "Glass Railing",
-    "image": "/images/railingImages/glassRailing/glass_rail3.png",
+    "image": "/Images/railingImages/glassRailing/glass_rail3.png",
     "description": "Minimalist glass railing for a clean, open look.",
     "brand": "G3",
     "sku": "GLASSRAIL3",
@@ -566,7 +566,7 @@ export const railings = [
    {
     "id": 4,
     "title": "Glass Railing",
-    "image": "/images/railingImages/glassRailing/glass_rail4.png",
+    "image": "/Images/railingImages/glassRailing/glass_rail4.png",
     "description": "High-quality glass railing that enhances natural light.",
     "brand": "G4",
     "sku": "GLASSRAIL4",
@@ -581,7 +581,7 @@ export const railings = [
    {
     "id": 5,
     "title": "Glass Railing",
-    "image": "/images/railingImages/glassRailing/glass_rail5.png",
+    "image": "/Images/railingImages/glassRailing/glass_rail5.png",
     "description": "Contemporary glass railing with stainless steel accents.",
     "brand": "G5",
     "sku": "GLASSRAIL5",
@@ -596,7 +596,7 @@ export const railings = [
    {
     "id": 6,
     "title": "Glass Railing",
-    "image": "/images/railingImages/glassRailing/glass_rail6.png",
+    "image": "/Images/railingImages/glassRailing/glass_rail6.png",
     "description": "Stylish glass railing for a sophisticated, modern touch.",
     "brand": "G6",
     "sku": "GLASSRAIL6",
@@ -611,7 +611,7 @@ export const railings = [
    {
     "id": 7,
     "title": "Glass Railing",
-    "image": "/images/railingImages/glassRailing/glass_rail7.png",
+    "image": "/Images/railingImages/glassRailing/glass_rail7.png",
     "description": "Frameless glass railing for unobstructed views.",
     "brand": "G7",
     "sku": "GLASSRAIL7",
@@ -626,7 +626,7 @@ export const railings = [
    {
     "id": 8,
     "title": "Glass Railing",
-    "image": "/images/railingImages/glassRailing/glass_rail8.png",
+    "image": "/Images/railingImages/glassRailing/glass_rail8.png",
     "description": "Durable glass railing for both indoor and outdoor spaces.",
     "brand": "G8",
     "sku": "GLASSRAIL8",
@@ -641,7 +641,7 @@ export const railings = [
    {
     "id": 9,
     "title": "Glass Railing",
-    "image": "/images/railingImages/glassRailing/glass_rail9.png",
+    "image": "/Images/railingImages/glassRailing/glass_rail9.png",
     "description": "Modern glass railing with a sleek, minimalist design.",
     "brand": "G9",
     "sku": "GLASSRAIL9",
@@ -656,7 +656,7 @@ export const railings = [
    {
     "id": 22,
     "title": "Steel Railing",
-    "image": "/images/railingImages/steelRailing/steel_rai3.png",
+    "image": "/Images/railingImages/steelRailing/steel_rai3.png",
     "description": "High-quality steel railing with smooth, polished finish.",
     "brand": "G22",
     "sku": "STEELRAIL3",
@@ -671,7 +671,7 @@ export const railings = [
    {
     "id": 23,
     "title": "Steel Railing",
-    "image": "/images/railingImages/steelRailing/steel_rai4.png",
+    "image": "/Images/railingImages/steelRailing/steel_rai4.png",
     "description": "Durable steel railing with a minimalist design.",
     "brand": "G23",
     "sku": "STEELRAIL4",
@@ -686,7 +686,7 @@ export const railings = [
    {
     "id": 24,
     "title": "Steel Railing",
-    "image": "/images/railingImages/steelRailing/steel_rai5.png",
+    "image": "/Images/railingImages/steelRailing/steel_rai5.png",
     "description": "Elegant steel railing for both indoor and outdoor use.",
     "brand": "G24",
     "sku": "STEELRAIL5",
@@ -701,7 +701,7 @@ export const railings = [
    {
     "id": 25,
     "title": "Steel Railing",
-    "image": "/images/railingImages/steelRailing/steel_rai6.png",
+    "image": "/Images/railingImages/steelRailing/steel_rai6.png",
     "description": "High-quality steel railing with smooth, polished finish.",
     "brand": "G25",
     "sku": "STEELRAIL6",
@@ -716,7 +716,7 @@ export const railings = [
    {
     "id": 26,
     "title": "Steel Railing",
-    "image": "/images/railingImages/steelRailing/steel_rai7.png",
+    "image": "/Images/railingImages/steelRailing/steel_rai7.png",
     "description": "Industrial-style steel railing for urban properties.",
     "brand": "G26",
     "sku": "STEELRAIL7",
@@ -731,7 +731,7 @@ export const railings = [
    {
     "id": 27,
     "title": "Steel Railing",
-    "image": "/images/railingImages/steelRailing/steel_rail1.png",
+    "image": "/Images/railingImages/steelRailing/steel_rail1.png",
     "description": "Modern steel railing with geometric pattern details.",
     "brand": "G27",
     "sku": "STEELRAIL8",
@@ -746,7 +746,7 @@ export const railings = [
    {
     "id": 28,
     "title": "Steel Railing",
-    "image": "/images/railingImages/steelRailing/steel_rail2.png",
+    "image": "/Images/railingImages/steelRailing/steel_rail2.png",
     "description": "Stylish steel railing to complement any modern home.",
     "brand": "G28",
     "sku": "STEELRAIL9",
@@ -761,7 +761,7 @@ export const railings = [
    {
     "id": 29,
     "title": "Steel Railing",
-    "image": "/images/railingImages/steelRailing/steel_rail3.png",
+    "image": "/Images/railingImages/steelRailing/steel_rail3.png",
     "description": "Strong and durable steel railing for enhanced security.",
     "brand": "G29",
     "sku": "STEELRAIL10",
@@ -776,7 +776,7 @@ export const railings = [
    {
     "id": 30,
     "title": "Steel Railing",
-    "image": "/images/railingImages/steelRailing/steel_rail4.png",
+    "image": "/Images/railingImages/steelRailing/steel_rail4.png",
     "description": "Simple yet refined steel railing for a timeless look.",
     "brand": "G30",
     "sku": "STEELRAIL11",
@@ -794,7 +794,7 @@ export const windows = [
   {
     "id": 1,
     "title": "Aluminium Window",
-    "image": "/images/windowImages/aluminiumWin/alumwin1.png",
+    "image": "/Images/windowImages/aluminiumWin/alumwin1.png",
     "description": "Premium aluminium windows with a sleek, modern finish.",
     "brand": "W1",
     "sku": "ALUMWIN1",
@@ -809,7 +809,7 @@ export const windows = [
    {
     "id": 2,
     "title": "Aluminium Window",
-    "image": "/images/windowImages/aluminiumWin/alumwin2.png",
+    "image": "/Images/windowImages/aluminiumWin/alumwin2.png",
     "description": "Contemporary aluminium frames that offer a refined, minimalist look.",
     "brand": "W2",
     "sku": "ALUMWIN2",
@@ -824,7 +824,7 @@ export const windows = [
    {
     "id": 3,
     "title": "Aluminium Window",
-    "image": "/images/windowImages/aluminiumWin/alumwin3.png",
+    "image": "/Images/windowImages/aluminiumWin/alumwin3.png",
     "description": "Elegant aluminium windows that blend durability with style.",
     "brand": "W3",
     "sku": "ALUMWIN3",
@@ -839,7 +839,7 @@ export const windows = [
    {
     "id": 4,
     "title": "Aluminium Window",
-    "image": "/images/windowImages/aluminiumWin/alumwin4.png",
+    "image": "/Images/windowImages/aluminiumWin/alumwin4.png",
     "description": "High-performance aluminium windows designed to maximize natural light.",
     "brand": "W4",
     "sku": "ALUMWIN4",
@@ -854,7 +854,7 @@ export const windows = [
    {
     "id": 5,
     "title": "Aluminium Window",
-    "image": "/images/windowImages/aluminiumWin/alumwin5.png",
+    "image": "/Images/windowImages/aluminiumWin/alumwin5.png",
     "description": "Modern aluminium windows with clean lines and a polished, sophisticated appearance.",
     "brand": "W5",
     "sku": "ALUMWIN5",
@@ -869,7 +869,7 @@ export const windows = [
    {
     "id": 6,
     "title": "Aluminium Window",
-    "image": "/images/windowImages/aluminiumWin/alumwin6.png",
+    "image": "/Images/windowImages/aluminiumWin/alumwin6.png",
     "description": "Stylish glass railing for a sophisticated, modern touch.",
     "brand": "W6",
     "sku": "ALUMWIN6",
@@ -884,7 +884,7 @@ export const windows = [
    {
     "id": 7,
     "title": "Aluminium Window",
-    "image": "/images/windowImages/aluminiumWin/alumwin7.png",
+    "image": "/Images/windowImages/aluminiumWin/alumwin7.png",
     "description": "Stylish aluminium windows with a smooth, refined design.",
     "brand": "W7",
     "sku": "ALUMWIN7",
@@ -899,7 +899,7 @@ export const windows = [
    {
     "id": 8,
     "title": "Aluminium Window",
-    "image": "/images/windowImages/aluminiumWin/alumwin8.png",
+    "image": "/Images/windowImages/aluminiumWin/alumwin8.png",
     "description": "Durable aluminium frames that provide a modern, sleek aesthetic.",
     "brand": "W8",
     "sku": "ALUMWIN8",
@@ -914,7 +914,7 @@ export const windows = [
    {
     "id": 9,
     "title": "Aluminium Window",
-    "image": "/images/windowImages/aluminiumWin/alumwin9.png",
+    "image": "/Images/windowImages/aluminiumWin/alumwin9.png",
     "description": "Contemporary aluminium windows that enhance your space with crisp lines.",
     "brand": "W9",
     "sku": "ALUMWIN9",
@@ -929,7 +929,7 @@ export const windows = [
    {
     "id": 10,
     "title": "Aluminium Window",
-    "image": "/images/windowImages/aluminiumWin/alumwin10.png",
+    "image": "/Images/windowImages/aluminiumWin/alumwin10.png",
     "description": "Elegant aluminium windows designed for strength and visual appeal.",
     "brand": "W10",
     "sku": "ALUMWIN10",
@@ -944,7 +944,7 @@ export const windows = [
    {
     "id": 11,
     "title": "Grill Window",
-    "image": "/images/windowImages/steelGrillWin/grill_win1.png",
+    "image": "/Images/windowImages/steelGrillWin/grill_win1.png",
     "description": "Stylish grill windows that add a sophisticated edge to any space.",
     "brand": "W11",
     "sku": "GRILLWIN1",
@@ -959,7 +959,7 @@ export const windows = [
    {
     "id": 12,
     "title": "Grill Window",
-    "image": "/images/windowImages/steelGrillWin/grill_win2.png",
+    "image": "/Images/windowImages/steelGrillWin/grill_win2.png",
     "description": "Sturdy grill windows that combine security with a timeless design.",
     "brand": "W12",
     "sku": "GRILLWIN2",
@@ -974,7 +974,7 @@ export const windows = [
    {
     "id": 13,
     "title": "Grill Window",
-    "image": "/images/windowImages/steelGrillWin/grill_win3.png",
+    "image": "/Images/windowImages/steelGrillWin/grill_win3.png",
     "description": "Elegant grill windows offering enhanced protection without compromising style.",
     "brand": "W13",
     "sku": "GRILLWIN3",
@@ -989,7 +989,7 @@ export const windows = [
    {
     "id": 14,
     "title": "Grill Window",
-    "image": "/images/windowImages/steelGrillWin/grill_win4.png",
+    "image": "/Images/windowImages/steelGrillWin/grill_win4.png",
     "description": "Modern grill windows with a clean, structured look.",
     "brand": "W14",
     "sku": "GRILLWIN4",
@@ -1004,7 +1004,7 @@ export const windows = [
    {
     "id": 15,
     "title": "Grill Window",
-    "image": "/images/windowImages/steelGrillWin/grill_win5.png",
+    "image": "/Images/windowImages/steelGrillWin/grill_win5.png",
     "description": "High-quality grill windows that blend functionality with aesthetic appeal.",
     "brand": "W15",
     "sku": "GRILLWIN5",
@@ -1019,7 +1019,7 @@ export const windows = [
    {
     "id": 16,
     "title": "Grill Window",
-    "image": "/images/windowImages/steelGrillWin/grill_win6.png",
+    "image": "/Images/windowImages/steelGrillWin/grill_win6.png",
     "description": "Durable grill windows with a sleek, contemporary finish.",
     "brand": "W16",
     "sku": "GRILLWIN6",
@@ -1034,7 +1034,7 @@ export const windows = [
    {
     "id": 17,
     "title": "Grill Window",
-    "image": "/images/windowImages/steelGrillWin/grill_win7.png",
+    "image": "/Images/windowImages/steelGrillWin/grill_win7.png",
     "description": "Classic grill windows that provide both security and visual charm.",
     "brand": "W17",
     "sku": "GRILLWIN7",
@@ -1049,7 +1049,7 @@ export const windows = [
    {
     "id": 18,
     "title": "Grill Window",
-    "image": "/images/windowImages/steelGrillWin/grill_win8.png",
+    "image": "/Images/windowImages/steelGrillWin/grill_win8.png",
     "description": "Robust grill windows with a refined, modern design.",
     "brand": "W18",
     "sku": "GRILLWIN8",
@@ -1064,7 +1064,7 @@ export const windows = [
    {
     "id": 19,
     "title": "Grill Window",
-    "image": "/images/windowImages/steelGrillWin/grill_win9.png",
+    "image": "/Images/windowImages/steelGrillWin/grill_win9.png",
     "description": "Decorative grill windows that offer reliable protection with style.",
     "brand": "W19",
     "sku": "GRILLWIN9",
@@ -1079,7 +1079,7 @@ export const windows = [
    {
     "id": 20,
     "title": "Grill Window",
-    "image": "/images/windowImages/steelGrillWin/grill_win10.png",
+    "image": "/Images/windowImages/steelGrillWin/grill_win10.png",
     "description": "Contemporary grill windows with a sleek, geometric pattern.",
     "brand": "W20",
     "sku": "GRILLWIN10",

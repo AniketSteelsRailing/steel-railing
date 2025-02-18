@@ -11,16 +11,16 @@ const Footer = () => {
         <ul className="list-none mb-0">
           <li className="flex flex-col items-center text-center mb-2">
             <Link href="/">
-              {/* <Image height={120} width={120} src={logo} alt="Logo" /> */}
+              <img height={170} width={170} src="/Images/logo2.png" alt="Logo" />
             </Link>
           </li>
-          <li>
-            <p className="text-lg text-center mb-4">
+          {/* <li>
+            <p className="text-md text-center m-4">
               Modern Steel Railing Services
             </p>
-          </li>
+          </li> */}
           <li>
-            <p className="text-sm text-center">
+            <p className="text-sm text-center mt-6">
             Discover premium railing, window and Gate solutions for your home and business! Our custom designs, exceptional durability, and unmatched safety make all the difference.
             </p>
           </li>
@@ -123,7 +123,7 @@ const Footer = () => {
         <h4 className="text-lg font-bold mb-4 text-center sm:text-left">CONNECT WITH US</h4>
         <ul className="list-none mb-0 sm:text-left text-center">
           <li className="mb-2">
-            <p className="text-sm hover:text-textColor">Modern Steel Railing Services</p>
+            <p className="text-md hover:text-textColor">Modern Steel Railing Services</p>
           </li>
           <li className="mb-2">
             <iframe

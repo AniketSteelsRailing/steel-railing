@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Get_Quote } from "@/commonConstant/constant";
+import Link from 'next/link';
 export default function RailingSolutions() {
   return (
     <section className="flex flex-col md:flex-row items-center px-6 md:px-12 py-12 bg-white">
@@ -36,19 +37,18 @@ export default function RailingSolutions() {
         <p className="mt-4 text-textColor">
           Elevate your property with our custom designs that ensure exceptional durability and safety. Experience tailor-made installations that enhance both aesthetics and functionality.
         </p>
-        <ul className="mt-4 text-textColor space-y-2">
+        <ul className="mt-4 mb-10 text-textColor space-y-2">
           <li>✔️ Custom railings designed to match your unique style</li>
           <li>✔️ Expert installations prioritizing safety and efficiency</li>
           <li>✔️ Reliable repair services to maintain your investments</li>
           <li>✔️ Ongoing maintenance packages for lasting performance</li>
         </ul>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="mt-6 rounded-full bg-blue-400 text-white py-2 px-6 shadow-lg hover:bg-accent transition"
+        <Link
+          href="/service-form"
+          className="inline-block px-8 py-2.5 bg-blue-400 text-white font-semibold rounded-full hover:bg-accent transition-transform transform hover:scale-105 duration-300 animate-fade-in-up delay-300"
         >
           {Get_Quote}
-        </motion.button>
+        </Link>
       </motion.div>
     </section>
   );

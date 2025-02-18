@@ -40,18 +40,18 @@ const Header = () => {
   return (
     // fixed header tag values of classname "bg-gray-900 shadow-md"
     <header className="w-full top-0 left-0 z-30 bg-primary">
-      <div className="flex justify-left">
+      <div className="flex justify-center">
         {/* Logo Section */}
-        <div className="container flex justify-between items-center px-6 py-4">
+        <div className="container flex justify-between items-center py-4">
           <div className="text-2xl font-bold flex items-center">
             <Link href="/">
-              {/* <Image
-                height={70}
-                width={70}
-                src={logo}
+               <Image
+                height={160}
+                width={160}
+                src="/Images/logo2.png"
                 alt="Logo"
-                className="h-13 w-auto"
-              /> */}
+                className=""
+              />
             </Link>
           </div>
 
@@ -64,9 +64,9 @@ const Header = () => {
                   key={link.name}
                   href={link.href}
                   className={clsx(
-                    "px-4 py-2 text-white hover:bg-neutral font-semibold hover:text-textColor rounded-md",
+                    "px-3 py-2 text-white hover:bg-neutral font-semibold hover:text-textColor rounded-md",
                     {
-                      "bg-neutral !text-black": isActive(link.href), // Apply active styles
+                      "bg-neutral !text-textColor": isActive(link.href), // Apply active styles
                     }
                   )}
                 >
@@ -81,7 +81,7 @@ const Header = () => {
             <Link href="/service-form" className="bg-blue-400 text-white px-6 py-2 rounded-full hover:bg-accent focus:outline-none focus:ring focus:ring-blue-300">
               {Get_Quote}
             </Link>
-            <a href="https://wa.me/9172790843" className="relative text-right text-top text-gray-500 hover:text-gray-700">
+            {/* <a href="https://wa.me/9172790843" className="relative text-right text-top text-gray-500 hover:text-gray-700">
               <Image
                 src="/Images/whatsapp.png"
                 height={30}
@@ -90,7 +90,7 @@ const Header = () => {
                 objectFit="cover"
                 className="rounded-lg "
               />
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -116,9 +116,9 @@ const Header = () => {
                 key={link.name}
                 href={link.href}
                 className={clsx(
-                  "px-4 py-5 text-white hover:bg-neutral font-semibold hover:text-textColor",
+                  "px-4 py-2 text-white hover:bg-neutral font-semibold hover:text-textColor rounded-md",
                   {
-                    "bg-neutral text-black": isActive(link.href), // Apply active styles
+                    "bg-neutral !text-textColor": isActive(link.href), // Apply active styles
                   }
                 )}
               >
@@ -152,9 +152,9 @@ const Header = () => {
                     key={link.name} 
                     href={link.href}
                     className={clsx(
-                      "px-4 py-2 text-white hover:bg-neutral font-semibold hover:text-textColor",
+                      "px-4 py-2 text-white hover:bg-neutral font-semibold hover:text-textColor rounded-md",
                       {
-                        "bg-neutral text-black": isActive(link.href), // Apply active styles
+                        "bg-neutral !text-textColor": isActive(link.href), // Apply active styles
                       }
                     )}
                     onClick={() => setMobileMenuOpen(false)} // Close menu on link click

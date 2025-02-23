@@ -1,6 +1,11 @@
 'use client'
 import React, { useState } from 'react';
 import { projects } from "@/commonConstant/constant"
+import { Metadata } from 'next';
+
+export const metadata :Metadata = {
+  title:"Railing Projects"
+}
 
 const OurRailingProject = () => {
   const [filter, setFilter] = useState('all');

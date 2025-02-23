@@ -2,7 +2,11 @@
 import React, { useState } from 'react';
 import SteelImageGallery from './imagemodal'; 
 import { railings } from '@/commonConstant/constant'; // Ensure that this path is correct
+import { Metadata } from 'next';
 
+export const metadata :Metadata = {
+  title:"Railing Designs"
+}
 
 const RailingProject = () => {
   const [filter, setFilter] = useState('all');

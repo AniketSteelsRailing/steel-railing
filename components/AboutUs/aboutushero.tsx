@@ -2,6 +2,14 @@ import React from 'react';
 import Link from "next/link";
 import { features } from "@/commonConstant/constant"
 import 'animate.css';
+import { Metadata } from 'next';
+
+const pageTitle = "About";
+export const metadata :Metadata = {
+  title :{
+    absolute : `${pageTitle} - Modern Steel Railing`,
+  }
+}
 
 const AboutUsHero = () => {
   return (

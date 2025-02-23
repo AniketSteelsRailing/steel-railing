@@ -2,6 +2,11 @@
 import React from "react";
 import Image from 'next/image';
 import BookServiceForm from "../Form/form";
+import { Metadata } from "next";
+
+export const metadata :Metadata = {
+  title:"Contact"
+}
 
 const ContactUs = () => {
 

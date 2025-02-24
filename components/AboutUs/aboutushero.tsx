@@ -4,11 +4,8 @@ import { features } from "@/commonConstant/constant"
 import 'animate.css';
 import { Metadata } from 'next';
 
-const pageTitle = "About";
 export const metadata :Metadata = {
-  title :{
-    absolute : `${pageTitle} - Modern Steel Railing`,
-  }
+  title :"About Us"
 }
 
 const AboutUsHero = () => {

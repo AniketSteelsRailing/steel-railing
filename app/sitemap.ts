@@ -1,4 +1,4 @@
-import { Metadata, MetadataRoute } from "next";
+import { MetadataRoute } from "next";
 
 const baseUrl = process.env.BASE_URL;
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

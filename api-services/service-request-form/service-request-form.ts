@@ -3,9 +3,8 @@ interface RequestPayload {
   phone: string;
   address: string;
   pincode: string;
-  railing_Sevices: string;
-  window_Services: string;
-  gate_Services: string;
+  serviceType: string;
+  serviceDetails: string;
   message: string;
 }
 

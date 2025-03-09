@@ -27,3 +27,19 @@ model User {
   phone      String?  @unique @db.VarChar(20)
   created_at DateTime @default(now()) @db.Timestamp(0)
 }
+
+model Gate {
+  id               Int     @id @default(autoincrement())
+  title            String
+  image            String
+  description      String
+  brand            String
+  sku              String
+  productType      String
+  category         String
+  originalPrice    String
+  discountedPrice  String
+  discountPercentage String
+  materialGrade    String
+  features         String
+}

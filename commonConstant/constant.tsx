@@ -183,7 +183,7 @@ export const features = [
   }
 ];
 
-  export const railingSevices = [
+  export const railingServices = [
   'Custom Design and Fabrication', 
   'Installation of Steel Railings', 
   'Repair and Maintenance', 

@@ -1,7 +1,6 @@
-// components/BookServiceForm.tsx
 "use client";
 import React, { useState, useTransition } from "react";
-import { railingSevices, windowServices, gateServices } from "@/commonConstant/constant";
+import {railingServices, windowServices, gateServices } from "@/commonConstant/constant";
 import { serviceRequestForm } from "@/api-services/service-request-form/service-request-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -11,9 +10,8 @@ interface FormData {
   phone: string;
   address: string;
   pincode: string;
-  railingSevice: string;
-  windowService: string;
-  gateService: string;
+  selectedService: string;
+  serviceDetails: string;
   message: string;
   terms: boolean;
 }
@@ -24,9 +22,8 @@ const BookServiceForm: React.FC = () => {
     phone: "",
     address: "",
     pincode: "",
-    railingSevice: railingSevices[0],
-    windowService: windowServices[0],
-    gateService: gateServices[0],
+    selectedService: "", // Dropdown for selecting service (railing, window, gate)
+    serviceDetails: "", // Corresponding service details
     message: "",
     terms: false,
   });
@@ -43,6 +40,14 @@ const BookServiceForm: React.FC = () => {
       [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
     });
   };
+
+	const handleServiceChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setFormData({
+      ...formData,
+      selectedService: e.target.value,
+      serviceDetails: "", // Reset the service details when the main service changes
+    });
+  };																		
 
   const validateForm = () => {
     const newErrors = {} as Record<string, string>;
@@ -69,23 +74,18 @@ const BookServiceForm: React.FC = () => {
       newErrors.pincode = "Please enter a valid 6-digit pincode.";
     }
 
-    if (!formData.railingSevice) {
-      newErrors.railingSevice = "Please select a service.";
+    if (!formData.selectedService) {
+      newErrors.selectedService = "Please select a service type.";
     }
 
-    if (!formData.windowService) {
-      newErrors.windowService = "Please select a service.";
-    }
-
-    if (!formData.gateService) {
-      newErrors.combinedService = "Please select a service.";
+    if (!formData.serviceDetails) {
+      newErrors.serviceDetails = "Please select a specific service for the selected type.";
     }
 
     if (!formData.terms) {
       newErrors.terms = "You must agree to the terms and conditions.";
     }
-
-    setErrors(newErrors);
+    setErrors(newErrors);  
 
     if (Object.keys(newErrors).length > 0) {
       toast.error("Please fix the errors in the form.", {
@@ -112,9 +112,8 @@ const BookServiceForm: React.FC = () => {
         phone: formData.phone,
         address: formData.address,
         pincode: formData.pincode,
-        railing_Sevices: formData.railingSevice,
-        window_Services: formData.windowService,
-        gate_Services: formData.gateService,
+        serviceType: formData.selectedService,
+        serviceDetails: formData.serviceDetails,
         message: formData.message,
       };
 
@@ -139,9 +138,8 @@ const BookServiceForm: React.FC = () => {
             phone: "",
             address: "",
             pincode: "",
-            railingSevice: "",
-            windowService: "",
-            gateService: "",
+            selectedService: "",
+            serviceDetails: "",
             message: "",
             terms: false,
           });
@@ -257,99 +255,83 @@ const BookServiceForm: React.FC = () => {
             )}
           </div>
 
-          {/* Railing Service Dropdown */}
+          {/* Service Dropdown */}
           <div className="relative">
             <label
-              htmlFor="railingSevice"
+              htmlFor="selectedService"
               className="absolute top-0 left-3 text-sm text-gray-500 transform -translate-y-1/2 bg-white px-1"
             >
-              Select Railing Service
+              Select Service Type
             </label>
             <select
-              id="railingSevice"
-              name="railingSevice"
+              id="selectedService"
+              name="selectedService"
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
-              value={formData.railingSevice}
-              onChange={handleChange}
-              disabled={isPending}
+              value={formData.selectedService}
+              onChange={handleServiceChange}				  
             >
               <option value="" disabled>
-                Select Railing Service
+                Select Service Type
               </option>
-              {railingSevices.map((service, index) => (
-                <option key={service + index} value={service}>
-                  {service}
-                </option>
-              ))}
+              <option value="Railing">Railing</option>
+              <option value="Window">Window</option>
+              <option value="Gate">Gate</option>
             </select>
-            {errors.railingSevice && (
-              <p className="text-sm text-red-500">{errors.railingSevice}</p>
+            {errors.selectedService && (
+              <p className="text-sm text-red-500">{errors.selectedService}</p>
             )}
           </div>
 
-          {/* Window Service Dropdown */}
-          <div className="relative">
-            <label
-              htmlFor="windowService"
-              className="absolute top-0 left-3 text-sm text-gray-500 transform -translate-y-1/2 bg-white px-1"
-            >
-              Select Window Service
-            </label>
-            <select
-              id="windowService"
-              name="windowService"
-              className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
-              value={formData.windowService}
-              onChange={handleChange}
-              disabled={isPending}
-            >
-              <option value="" disabled>
-                Select Window Service
-              </option>
-              {windowServices.map((service, index) => (
-                <option key={service + index} value={service}>
-                  {service}
+          {/* Service-specific Dropdown */}
+          {formData.selectedService && (
+            <div className="relative">
+              <label
+                htmlFor="serviceDetails"
+                className="absolute top-0 left-3 text-sm text-gray-500 transform -translate-y-1/2 bg-white px-1"
+              >
+                Select {formData.selectedService} Service
+              </label>
+              <select
+                id="serviceDetails"
+                name="serviceDetails"
+                className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
+                value={formData.serviceDetails}
+                onChange={handleChange}
+              >
+                <option value="" disabled>
+                  Select {formData.selectedService} Service
                 </option>
-              ))}
-            </select>
-            {errors.windowService && (
-              <p className="text-sm text-red-500">{errors.windowService}</p>
-            )}
-          </div>
 
-          {/* Combined Service Dropdown */}
-          <div className="relative">
-            <label
-              htmlFor="combinedService"
-              className="absolute top-0 left-3 text-sm text-gray-500 transform -translate-y-1/2 bg-white px-1"
-            >
-              Select Combined Service
-            </label>
-            <select
-              id="gateService"
-              name="gateService"
-              className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
-              value={formData.gateService}
-              onChange={handleChange}
-              disabled={isPending}
-            >
-              <option value="" disabled>
-                Select Combined Service
-              </option>
-              {gateServices.map((service, index) => (
-                <option key={service + index} value={service}>
-                  {service}
-                </option>
-              ))}
-            </select>
-            {errors.gateService && (
-              <p className="text-sm text-red-500">{errors.gateService}</p>
-            )}
-          </div>
+                {formData.selectedService === "Railing" &&
+                  railingServices.map((service, index) => (
+                    <option key={index} value={service}>
+                      {service}
+                    </option>
+                  ))}
+
+                {formData.selectedService === "Window" &&
+                  windowServices.map((service, index) => (
+                    <option key={index} value={service}>
+                      {service}
+                    </option>
+                  ))}
+
+                {formData.selectedService === "Gate" &&
+                  gateServices.map((service, index) => (
+                    <option key={index} value={service}>
+                      {service}
+                    </option>
+                  ))}
+              </select>
+              {errors.serviceDetails && (
+                <p className="text-sm text-red-500">{errors.serviceDetails}</p>
+              )}
+            </div>
+          )}
 
           {/* Message */}
           <div className="relative">
-            <label
+             <label
               htmlFor="message"
               className="absolute top-0 left-3 text-sm text-gray-500 transform -translate-y-1/2 bg-white px-1"
             >
@@ -362,46 +344,46 @@ const BookServiceForm: React.FC = () => {
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring focus:border-blue-100"
               value={formData.message}
               onChange={handleChange}
-              disabled={isPending}
             />
             {errors.message && (
               <p className="text-sm text-red-500">{errors.message}</p>
             )}
           </div>
 
-          {/* Terms Checkbox */}
-          <label className="flex items-center">
+          {/* Terms and Conditions */}
+          <div className="flex items-center">
             <input
               type="checkbox"
               name="terms"
               checked={formData.terms}
               onChange={handleChange}
               className="mr-2"
-              disabled={isPending}
             />
             <span className="text-sm text-gray-600">
-              I agree to the Terms & Conditions
+              I agree to the{" "}
+              <span className="text-blue-500 cursor-pointer">
+                terms and conditions
+              </span>
             </span>
-          </label>
+          </div>
           {errors.terms && (
-            <p className="text-sm text-red-500 !mt-0">{errors.terms}</p>
+            <p className="text-sm text-red-500">{errors.terms}</p>
           )}
 
-          <button
-            type="submit"
-            className="w-full bg-blue-400 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-300"
-          >
-            {isPending ? (
-              <div className="flex items-center justify-center">
-                Submitting...
-                <div className="animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-white ml-2"></div>
-              </div>
-            ) : (
-              "Submit"
-            )}
-          </button>
+          {/* Submit Button */}
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="w-full py-3 px-6 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-300"
+              disabled={isPending}
+            >
+              {isPending ? "Submitting..." : "Submit Request"}
+            </button>
+          </div>
         </form>
       </div>
+
+      {/* Toast Notifications */}
       <ToastContainer />
     </div>
   );

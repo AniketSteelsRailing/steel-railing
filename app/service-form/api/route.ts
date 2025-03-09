@@ -10,9 +10,8 @@ export async function POST(request: Request) {
       phone,
       address,
       pincode,
-      railing_service,
-      window_service,
-      gate_service,
+      serviceType,
+      serviceDetails,
       message,
     } = body;
     const newRequest = await prisma.request.create({
@@ -21,9 +20,8 @@ export async function POST(request: Request) {
         phone,
         address,
         pincode,
-        railing_service,
-        window_service,
-        gate_service,
+        service_type : serviceType,
+        service_details : serviceDetails,
         message,
       },
     });

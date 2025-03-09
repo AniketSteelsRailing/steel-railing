@@ -30,7 +30,9 @@ const SteelImageGallery: React.FC<SteelImageGalleryProps> = ({ gates }) => {
   const totalPages = gates?.length ? Math.ceil(gates.length / itemsPerPage) : 0;
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentGates = gates?.slice(startIndex, endIndex) || [];
+  const currentGates = (Array.isArray(gates) ? gates : []).slice(startIndex, endIndex);
+
+  // const currentGates = gates?.slice(startIndex, endIndex) || [];
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {

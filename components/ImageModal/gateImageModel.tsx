@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import SteelImageGallery from "./imagemodal"; // Assuming this is the component that receives the 'gates' prop
-// import { gates } from '@/commonConstant/constant'; // Ensure that this path is correct
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

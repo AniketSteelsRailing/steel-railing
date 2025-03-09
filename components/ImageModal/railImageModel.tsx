@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react';
 import SteelImageGallery from './imagemodal'; 
-import { railings } from '@/commonConstant/constant'; // Ensure that this path is correct
 import { Metadata } from 'next';
 
 export const metadata :Metadata = {

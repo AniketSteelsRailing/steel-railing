@@ -14,9 +14,8 @@ model Request {
   phone          String
   address        String
   pincode        String
-  railing_service   String
-  window_service    String
-  gate_service   String
+  service_type   String
+  service_details String
   message        String
 }
 
@@ -28,7 +27,37 @@ model User {
   created_at DateTime @default(now()) @db.Timestamp(0)
 }
 
-model Gate {
+model gates_data {
+  id               Int     @id @default(autoincrement())
+  title            String
+  image            String
+  description      String
+  brand            String
+  sku              String
+  productType      String
+  category         String
+  originalPrice    String
+  discountedPrice  String
+  discountPercentage String
+  materialGrade    String
+  features         String
+}
+model railing_data {
+  id               Int     @id @default(autoincrement())
+  title            String
+  image            String
+  description      String
+  brand            String
+  sku              String
+  productType      String
+  category         String
+  originalPrice    String
+  discountedPrice  String
+  discountPercentage String
+  materialGrade    String
+  features         String
+}
+model window_data {
   id               Int     @id @default(autoincrement())
   title            String
   image            String

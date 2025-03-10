@@ -32,55 +32,55 @@ export const projects = [
     id: 1,
     title: 'Modern Staircase Railing',
     category: 'railings',
-    image: '/Images/railingImages/glassRailing/glass_rail1.png'
+    image: '/Images/HomeImages/glass_rail1.png'
   },
   {
     id: 2,
     title: 'Energy-Efficient Windows',
     category: 'windows',
-    image: '/Images/windowImages/aluminiumWin/alumwin10.png'
+    image: '/Images/HomeImages/alumwin10.png'
   },
   {
     id: 3,
     title: 'Glass Balcony Railing',
     category: 'railings',
-    image: '/Images/railingImages/glassRailing/glass_rail7.png'
+    image: '/Images/HomeImages/glass_rail7.png'
   },
   {
     id: 4,
     title: 'Commercial Windows',
     category: 'windows',
-    image: '/Images/windowImages/aluminiumWin/alumwin7.png'
+    image: '/Images/HomeImages/alumwin7.png'
   },
   {
     id: 5,
     title: 'Commercial Gates',
     category: 'gates',
-    image: '/Images/gateImages/slidinggate/slide_gate5.png'
+    image: '/Images/HomeImages/slide_gate5.png'
   },
   {
     id: 6,
     title: 'Custom Steel Railing',
     category: 'railings',
-    image: '/Images/railingImages/steelRailing/steel_rai4.png'
+    image: '/Images/HomeImages/steel_rail4.png'
   },
   {
     id: 7,
     title: 'Custom Sliding Gates',
     category: 'gates',
-    image: '/Images/gateImages/slidinggate/slide_gate1.png'
+    image: '/Images/HomeImages/slide_gate1.png'
   },
   {
     id: 8,
     title: 'Residential Windows',
     category: 'windows',
-    image: '/Images/windowImages/steelGrillWin/grill_win2.png'
+    image: '/Images/HomeImages/grill_win2.png'
   },
   {
     id: 9,
     title: 'Residential Gates',
     category: 'gates',
-    image: '/Images/gateImages/doubledoorgate/door_gate9.png'
+    image: '/Images/HomeImages/door_gate9.png'
   }
 ];
 
@@ -121,42 +121,42 @@ export const galleryItems = [
   {
     title: 'Transform Your Space',
     description: 'Elevate your property with our tailored railing solutions, combining aesthetic appeal with superior safety.',
-    image: '/Images/otherImages/steel_rail1.png',
+    image: '/Images/HomeImages/steel_rail1.png',
   },
   {
     title: 'Unmatched Quality',
     description: 'Our precision window installations are designed to improve energy efficiency while enhancing your property’s visual appeal.',
-    image: '/Images/otherImages/alumwin1.png',
+    image: '/Images/HomeImages/alumwin1.png',
   },
   {
     title: 'Safety and Durability',
     description: 'Our railings are built with the highest standards of safety and durability, ensuring peace of mind for every homeowner.',
-    image: '/Images/otherImages/steel_rail4.png',
+    image: '/Images/HomeImages/steel_rail4.png',
   },
   {
     title: 'Custom Designs',
     description: 'Bespoke railing designs tailored to fit your unique style and functional needs can transform any space into a statement.',
-    image: '/Images/otherImages/steel_rail3.png',
+    image: '/Images/HomeImages/steel_rail3.png',
   },
   {
     title: 'Elevate Aesthetics',
     description: 'Windows that match your décor and enhance your home’s charm while maintaining energy efficiency are within your reach.',
-    image: '/Images/otherImages/alumwin2.png',
+    image: '/Images/HomeImages/alumwin2.png',
   },
   {
     title: 'Precision Installation',
     description: 'Our expert team guarantees seamless installations, adhering to the tightest schedules while maintaining the highest standards.',
-    image: '/Images/otherImages/slide_gate1.png',
+    image: '/Images/HomeImages/slide_gate1.png',
   },
   {
     title: 'Inspiring Craftsmanship',
     description: 'Highlighting fine details, each railing and window reflects a commitment to artistry and quality that you can rely on.',
-    image: '/Images/otherImages/glass_rail1.png',
+    image: '/Images/HomeImages/glass_rail1.png',
   },
   {
     title: 'Timeless Appeal',
     description: 'Discover how our premium materials and sleek designs combine to create enduring beauty in your living and workspaces.',
-    image: '/Images/otherImages/billboard.png',
+    image: '/Images/HomeImages/billboard.png',
   },
 ];
 

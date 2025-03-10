@@ -1,13 +1,3 @@
-interface RequestPayload {
-  name: string;
-  phone: string;
-  address: string;
-  pincode: string;
-  serviceType: string;
-  serviceDetails: string;
-  message: string;
-}
-
 export const getServiceData = async (serviceName: string) => {
 
   try {

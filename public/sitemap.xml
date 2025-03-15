@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      
+      <url>
+        <loc>http://localhost:3000</loc>
+      </url>
+      <url>
+        <loc>http://localhost:3000/imagemodel/gate</loc>
+      </url>
+      <url>
+        <loc>http://localhost:3000/imagemodel/railing</loc>
+      </url>
+      <url>
+        <loc>http://localhost:3000/imagemodel/window</loc>
+      </url>
+      <url>
+        <loc>http://localhost:3000/aboutus</loc>
+      </url>
+      <url>
+        <loc>http://localhost:3000/contact-us</loc>
+      </url>
+      <url>
+        <loc>http://localhost:3000/service-form</loc>
+      </url>
+      <url>
+        <loc>http://localhost:3000/railingproject</loc>
+      </url>
+      <url>
+        <loc>http://localhost:3000/ourservices</loc>
+      </url>
+    </urlset>

@@ -5,14 +5,14 @@ export const getServiceData = async (serviceName: string) => {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.API_SECRET_KEY}`,
+          // Authorization: `Bearer ${process.env.API_SECRET_KEY}`,
         },
       }
     );
 
     // Check if the response is successful (status 200-299)
     if (!response.ok) {
-      throw new Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
+      console.log(`Failed to fetch data: ${response.status} ${response.statusText}`);
     }
 
     // Check if the response is JSON
@@ -21,7 +21,7 @@ export const getServiceData = async (serviceName: string) => {
       const data = await response.json();
       return data;
     } else {
-      throw new Error('Expected JSON response, but got something else');
+      console.log('Expected JSON response, but got something else');
     }
   } catch (error) {
     // Log the error for debugging
@@ -29,27 +29,3 @@ export const getServiceData = async (serviceName: string) => {
     return null; // or you can handle the error accordingly (e.g., return empty data)
   }
 };
-
-
-
-
-
-// export const getServiceData = async (serviceName: string) => {
-
-//   try {
-//     const response = await fetch(
-//       `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/search?query=${serviceName}`,
-//       {
-//         headers: {
-//           "Content-Type": "application/json",
-//           Authorization: `Bearer ${process.env.API_SECRET_KEY}`,
-//         },
-//       }
-//     );
-    
-//     return response.json();
-//   } catch (error) {
-//   console.log("testdata error", error);
-//     console.error(error);
-//   }
-// };

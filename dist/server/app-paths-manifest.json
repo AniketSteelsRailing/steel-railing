@@ -1,0 +1,16 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/search/route": "app/api/search/route.js",
+  "/service-form/api/route": "app/service-form/api/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/opengraph-image.png/route": "app/opengraph-image.png/route.js",
+  "/aboutus/page": "app/aboutus/page.js",
+  "/contact-us/page": "app/contact-us/page.js",
+  "/imagemodel/gate/page": "app/imagemodel/gate/page.js",
+  "/imagemodel/railing/page": "app/imagemodel/railing/page.js",
+  "/imagemodel/window/page": "app/imagemodel/window/page.js",
+  "/ourservices/page": "app/ourservices/page.js",
+  "/page": "app/page.js",
+  "/railingproject/page": "app/railingproject/page.js",
+  "/service-form/page": "app/service-form/page.js"
+}

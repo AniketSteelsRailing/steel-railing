@@ -1,7 +1,0 @@
-{
-  "headers": {
-    "x-nextjs-stale-time": "4294967294",
-    "x-nextjs-prerender": "1",
-    "x-next-cache-tags": "_N_T_/layout,_N_T_/imagemodel/layout,_N_T_/imagemodel/gate/layout,_N_T_/imagemodel/gate/page,_N_T_/imagemodel/gate/"
-  }
-}

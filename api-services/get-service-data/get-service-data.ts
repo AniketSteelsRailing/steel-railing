@@ -5,7 +5,7 @@ export const getServiceData = async (serviceName: string) => {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.API_SECRET_KEY}`,
+          // Authorization: `Bearer ${process.env.API_SECRET_KEY}`,
         },
       }
     );

@@ -64,6 +64,8 @@ npx prisma generate
 # Start Next.js app
 npm run dev
 
+#To generate sitemap
+"export": "next build && tsx generate-sitemap.ts"
 
 <!-- export const getServiceData = async (serviceName: string) => {
 

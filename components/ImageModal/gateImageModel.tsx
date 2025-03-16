@@ -26,7 +26,7 @@ const GateProject = ({ gates }: { gates: GateProduct[] }) => {
   const [filter, setFilter] = useState("all");
 
   const filteredProjects =
-    filter === "all" ? gates : gates.filter((gate) => gate.category === filter);
+    filter === "all" ? gates : gates?.filter((gate) => gate.category === filter);
 
   return (
     <section className="py-14 bg-white">

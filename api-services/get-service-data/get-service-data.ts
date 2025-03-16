@@ -5,7 +5,7 @@ export const getServiceData = async (serviceName: string) => {
       {
         headers: {
           "Content-Type": "application/json",
-          // Authorization: `Bearer ${process.env.API_SECRET_KEY}`,
+           Authorization: `Bearer ${process.env.API_SECRET_KEY}`,
         },
       }
     );
@@ -25,7 +25,7 @@ export const getServiceData = async (serviceName: string) => {
     }
   } catch (error) {
     // Log the error for debugging
-    console.error("Error in getServiceData:", error);
+    console.log("Error in getServiceData:", error);
     return null; // or you can handle the error accordingly (e.g., return empty data)
   }
 };

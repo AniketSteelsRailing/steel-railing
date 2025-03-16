@@ -29,7 +29,7 @@ const RailingProject = ({railings} : {railings: RailingProjectProps[]}) => {
   const filteredProjects =
     filter === "all"
       ? railings
-      : railings.filter((railing) => railing.category === filter);
+      : railings?.filter((railing) => railing.category === filter);
 
   return (
     <section className="py-14 bg-white">

@@ -29,7 +29,7 @@ const WindowProject = ({ windows }: { windows: WindowProjectProps[] }) => {
   const filteredProjects =
     filter === "all"
       ? windows
-      : windows.filter((window) => window.category === filter);
+      : windows?.filter((window) => window.category === filter);
 
   return (
     <section className="py-14 bg-white">

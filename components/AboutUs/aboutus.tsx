@@ -2,7 +2,7 @@ import React from 'react';
 import 'animate.css';
 import { features } from "@/commonConstant/constant"
 
-const AboutUs = () => {
+const AboutUs = () => { 
   return (
     <section className="bg-gray-50">
       <div className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

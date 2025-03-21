@@ -4,6 +4,7 @@ import {railingServices, windowServices, gateServices } from "@/commonConstant/c
 import { serviceRequestForm } from "@/api-services/service-request-form/service-request-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 
 interface FormData {
   name: string;
@@ -361,9 +362,9 @@ const BookServiceForm: React.FC = () => {
             />
             <span className="text-sm text-gray-600">
               I agree to the{" "}
-              <span className="text-blue-500 cursor-pointer">
+              <Link href="/terms" className="text-blue-500 cursor-pointer">
                 terms and conditions
-              </span>
+              </Link>
             </span>
           </div>
           {errors.terms && (

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Dialog } from '@headlessui/react';
+import Link from "next/link";
 interface Gate {
   id: number;
   title: string;
@@ -46,12 +47,6 @@ const SteelImageGallery: React.FC<SteelImageGalleryProps> = ({ gates }) => {
     }
   };
 
-  // const [quantity, setQuantity] = useState(1);
-
-  // const handleQuantityChange = (delta: number) => {
-  //   setQuantity((prev) => Math.max(1, prev + delta));
-  // };
-
   return (
     <div className="container mx-auto p-4">
       {/* Gallery Section */}
@@ -59,11 +54,11 @@ const SteelImageGallery: React.FC<SteelImageGalleryProps> = ({ gates }) => {
         {currentGates.map((gate) => (
           <motion.div
             key={gate.id}
-            className="cursor-pointer rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+            className="cursor-pointer bg-neutral rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
             whileHover={{ scale: 1.05 }}
             onClick={() => setSelectedGate(gate)}
           >
-            <div className="relative group">
+            <div className="relative group ">
               <img
                 src={gate.image}
                 alt={gate.title}
@@ -73,8 +68,15 @@ const SteelImageGallery: React.FC<SteelImageGalleryProps> = ({ gates }) => {
                 <span className="text-white text-lg">View More</span>
               </div>
             </div>
-            <div className="p-4 bg-white">
-              <h2 className="text-lg font-semibold text-center">{gate.title}</h2>
+            <div className="p-2 justify-center">
+              <h2 className="text-lg text-center text-textColor">{gate.title}</h2>
+              <div className="flex justify-center items-center mt-2">
+                  <span className="text-sm line-through text-gray-500">{gate.originalPrice}</span>
+                  <span className="text-md font-semibold text-textColor ml-2">{gate.discountedPrice}</span>
+                  {/* <span className="text-sm bg-red-200 text-red-800 font-semibold ml-2 px-2 py-1 rounded-full">
+                    {gate.discountPercentage}
+                  </span> */}
+                </div>
             </div>
           </motion.div>
         ))}
@@ -144,37 +146,37 @@ const SteelImageGallery: React.FC<SteelImageGalleryProps> = ({ gates }) => {
               </div>
 
               <div className="w-full md:w-2/3 md:p-6">
-                <div className="font-bold text-xl mb-2">{selectedGate.title}</div>
-                <p className="text-gray-700 text-base">
+                <div className="font-semibold text-textColor text-lg mb-2">{selectedGate.title}</div>
+                <p className="text-gray-600 text-base">
                   <span className="font-semibold">Brand:</span> {selectedGate.brand}
                 </p>
-                <p className="text-gray-700 text-base">
+                <p className="text-gray-600 text-base">
                   <span className="font-semibold">SKU:</span> {selectedGate.sku}
                 </p>
-                <p className="text-gray-700 text-base">
+                <p className="text-gray-600 text-base">
                   <span className="font-semibold">Product Type:</span> {selectedGate.productType}
                 </p>
                 <div className="flex items-center mt-2">
                   <span className="text-lg line-through text-gray-500">{selectedGate.originalPrice}</span>
-                  <span className="text-2xl font-bold text-red-600 ml-2">{selectedGate.discountedPrice}</span>
+                  <span className="text-xl font-bold text-red-600 ml-2">{selectedGate.discountedPrice}</span>
                   <span className="text-sm bg-red-200 text-red-800 font-semibold ml-2 px-2 py-1 rounded-full">
                     {selectedGate.discountPercentage}
                   </span>
                 </div>
-                <p className="text-gray-700 text-base mt-2">
+                <p className="text-gray-700 text-base mt-2 mb-4">
                   <span className="font-semibold">Material Grade:</span> {selectedGate.materialGrade}
                 </p>
 
-                <button className="mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full transition-all duration-300 hover:scale-110">
+                  <Link href="/service-form" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-full transition-all duration-300 hover:scale-110">
                   GET QUOTE
-                </button>
+                  </Link>
 
-                <p className="text-gray-600 text-sm mt-2">
+                <p className="text-gray-600 text-sm mt-4">
                   Immediately return goods on delivery in case of any damages found.
                 </p>
 
                 <div className="mt-4">
-                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mb-2 mr-2"
+                    <span className="inline-block bg-gray-200 rounded-md px-3 py-2 text-sm text-textColor mb-2 mr-2"
                     >
                       {selectedGate.features}
                     </span>
